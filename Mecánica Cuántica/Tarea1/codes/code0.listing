@@ -1,0 +1,23 @@
+\begin{lstlisting}[style=EstiloPrueba,caption={Código Mathematica para obtener las figuras.},label={lst:dummy}]
+SetDirectory["/home/osvaldo13576/Documents/Wolfram Mathematica/"];
+GrafIso[A_, Zmin_, Zmax_] :=
+ ListPlot[Table[{Z, IsotopeData[{Z, A}, "AtomicMass"]}, {Z, Zmin, 
+     Zmax}] -> Table[ElementData[Z, "Abbreviation"], {Z, Zmin, Zmax}],
+   PlotRange -> Automatic, Frame -> True, 
+  FrameLabel -> {"Número Atómico Z", "Masa Atómica [u]"}, 
+  PlotLabel -> "A=" <> ToString[A]]
+GrafHL[A_, Zmin_, Zmax_] :=
+ ListLogLogPlot[
+  Table[{Z, IsotopeData[{Z, A}, "HalfLife"]}, {Z, Zmin, Zmax}] -> 
+   Table[IsotopeData[{Z, A}, "Symbol"], {Z, Zmin, Zmax}], 
+  PlotRange -> Automatic, Frame -> True, 
+  FrameLabel -> {"Número Atómico Z", "Vida Media [s]"}, 
+  PlotLabel -> "A=" <> ToString[A]]
+DecayMode[A_, Zmin_, Zmax_] :=
+ Table[{Z, IsotopeData[{Z, A}, "DecayModes"]}, {Z, Zmin, Zmax}]
+A = 150; Zmin = 55; Zmax = 71;
+DecayMode[A, Zmin, Zmax]
+Export["p5:U:f1.png", GrafIso[A, Zmin, Zmax], 
+ ImageResolution -> 1000]
+Export["p5:U:f2.png", GrafHL[A, Zmin, Zmax], ImageResolution -> 1000]
+\end{lstlisting}

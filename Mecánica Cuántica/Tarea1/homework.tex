@@ -1,0 +1,193 @@
+\input{style/settings}
+\input{style/short_commands}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{página\;\thepage/\pageref{LastPage}}
+\fancyhead[L]{Osvaldo Uriel Calderón Dorantes}
+\fancyfoot[L]{Mecánica Cuántica}
+\fancyfoot[R]{Facultad de Ciencias, UNAM \includegraphics[scale=0.13]{style/Sheikah.pdf}}
+\fancypagestyle{plain}{
+  \fancyfoot[C]{}
+}
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{flushleft}
+Osvaldo Uriel Calderón Dorantes, \hfill Mecánica Cuántica\\
+316005171 \hfill osvaldo13576@ciencias.unam  \\
+Facultad de Ciencias\\
+\underline{Universidad Nacional Autónoma de México}
+\end{flushleft}
+
+\begin{flushright}\vspace{-5mm}
+\includegraphics[height=1.5cm]{style/logo.pdf}
+\end{flushright}
+ 
+\begin{center}\vspace{-1cm}
+\textbf{ \large \customfont{Tarea 1}}\\
+\today
+\end{center}
+\medskip\hrule\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\small \textbf{Nota: A las unidades las pondré dentro de corchetes \ec{[\tx{unidad}]} para no confundir entre variables y realizar el análisis dimensional fácilmente.}}
+\medskip\hrule\bigskip
+
+\newlength{\strutheight}
+\settoheight{\strutheight}{\strut}
+
+
+
+\begin{enumerate}
+  \item Demuestra que el espectro del cuerpo negro derivado por Planck 
+  \ecc{\rho(\omega, T)=\dfrac{\hbar \omega^3}{\pi^2c^3}\dfrac{1}{e^{\hbar\omega/k T}-1},}
+  implica la ley de Stefan-Boltzmann \ec{u=aT^4}, con \ec{u} la densidad de energía, y determina la relación entre las constantes \ec{\hbar} y \ec{a}.
+  
+  
+  %https://slidesharetips.blogspot.com/2019/08/stefan-boltzmann-law.html
+  
+  Tomando la ecuación 
+  \ecc{\rho(\omega, T)=\dfrac{\hbar \omega^3}{\pi^2c^3}\dfrac{1}{e^{\hbar\omega/k T}-1}}
+  
+  Escribimos a la frecuencia angular \ec{\omega} como \ec{\omega=2\pi \nu} y a la constante de Planck como \ec{\hbar=\dfrac{h}{2\pi}}, entonces
+  \al{\rho(\nu, T)&=\dfrac{\p{\dfrac{h}{2\pi}} (2\pi\nu)^3}{\pi^2c^3}\dfrac{1}{e^{(h/2\pi)(2\pi \nu))/k T}-1}\\
+  &=\dfrac{8h\pi}{c^3}\dfrac{\nu^3 }{e^{h\nu/k T}-1}}  
+  
+  Integrándola a todas las frecuencias, entonces, considerando el intervalo $\nu\in (0,\infty)$ y dado que ahora esta función está integrada en todas las frecuencias, la densidad de energía es $u(T)=a T^4$, una función de la temperatura,
+  \al{u(T)&=\int_0^\infty \dfrac{8h\pi}{c^3}\dfrac{\nu^3 }{e^{h\nu/k T}-1} d\nu\\
+  &=\dfrac{8h\pi}{c^3}\int_0^\infty \dfrac{\nu^3 }{e^{h\nu/k T}-1} d\nu}
+  para realizar esta integral, realizamos el cambio de variable.  Sea $w=\frac{h\nu}{k T}$, de modo que \ecc{\nu=\frac{k T}{h}w\implies d\nu=\frac{k T}{h}dw}
+  Entonces
+  \al{u(T)&=\int_0^\infty \dfrac{8h\pi}{c^3}\dfrac{\nu^3 }{e^{h\nu/k T}-1} d\nu\\
+  &=\frac{8\pi h}{c^3}\int_0^\infty \frac{(\frac{k T}{h}w)^3}{\exp\left(w\right)-1}\frac{k T}{h}dw\\
+  &=\frac{8\pi h}{c^3}\left(\frac{k^4T^4}{h^4}\right)\int_0^\infty \frac{w^3}{e^w-1}dw\\
+  &=\frac{8\pi k^4T^4}{h^3c^3}\int_0^\infty \frac{w^3}{e^w-1}dw,\;\;\text{donde $\int_0^\infty \frac{w^3}{e^w-1}dw=\frac{\pi^4}{15}$}\\
+  &=\frac{8\pi k^4T^4}{h^3c^3}\left(\frac{\pi^4}{15}\right)\\
+  &=\frac{8\pi^5 k^4}{15h^3c^3}T^4}
+encontrando que
+\ecc{a=\frac{8\pi^5 k^4}{15h^3c^3}}
+
+  
+  \item La función de trabajo del oro es de \ec{5.1[eV]}.
+      \begin{enumerate}
+          \item ¿Cuántos fotoelectrones puedes arrancar de una cuchara de oro si la dejas por 1 segundo dentro de un microondas encendido? (suponiendo que el microondas trabaja con radiación de \ec{15[cm]} de longitud de onda y que su \ec{600[W]} de consumo, consigue depositar el \ec{5\%} en la cuchara.)
+          
+          
+
+
+
+
+
+
+
+
+
+          \item ¿Cuántos puedes arrancar de la misma cuchara usando por un segundo un láser industrial con una potencia de  \ec{42[W]} y \ec{655[nm]} de longitud de onda?
+          
+
+
+
+
+
+
+
+      \end{enumerate}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  \item Partiendo de la ecuación de onda completa de Schrödinger usa el método de separación de variables para encontrar la ecuación de Schrödinger independiente del tiempo y la solución general a la ecuación temporal en términos de la constante de separación.
+  
+  
+  Considerando la ecuación de onda en una dimensión, tomamos en cuenta que parte de de la función de onda \ec{\Psi(x,t)} se puede escribir como producto de dos funciones, una función con la variable espacial \ec{\phi(x)} y la otra con la variable temporal \ec{f(t)}, entonces
+    \ecc{\Psi(x,t)= \phi(x)f(t)}
+    escribiendo la ecuación de onda resultante como
+    \ecc{i\hbar\phi(x)\dfrac{\partial f(t)}{\partial t}=f(t)\p{-\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}+V(x)}\phi(x)}
+    teniendo que la ecuación diferencial parcial en \ec{\phi(x)} es tratada como constante sobre la diferenciación en el tiempo y \ec{f(t)} es constante sobre la diferenciación sobre el espacio, entonces podemos manipular ducha función para tener de un lado de la igualdad la función \ec{\phi} y de otro a la función \ec{f}
+    \ecc{i\hbar\dfrac{1}{f(t)}\dfrac{\partial f(t)}{\partial t}=\dfrac{1}{\phi(x)}\p{-\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}+V(x)}\phi(x)}
+    entonces podemos establecer que cada lado sea igual a una constante de separación
+    \al{i\hbar\dfrac{1}{f(t)}\dfrac{\partial f(t)}{\partial t}&=k\\
+    \dfrac{1}{\phi(x)}\p{-\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}+V(x)}\phi(x)&=k}
+    entonces, podemos resolver la parte temporal 
+    \ecc{i\hbar \dfrac{1}{f(t)}\dfrac{d f(t)}{d t}=k\implies\dfrac{ d f(t)}{f(t)}= \dfrac{k}{i\hbar} dt}
+    al integrar tenemos el caso en que
+    \ecc{\int \dfrac{1}{x}dx=\ln(|x|)+c}
+    entonces 
+    \ecc{\int_0^t\dfrac{ d f(\tau)}{f(\tau)}=\int_0^t \dfrac{k}{i\hbar} d\tau\implies \ln(f(t))-\ln(f(0))=-i\dfrac{k}{\hbar}t,\quad \dfrac{1}{i}=-i}
+      por propiedades de la función logaritmo tenemos que 
+      \ecc{\ln(\dfrac{f(t)}{f(0)})=-i\dfrac{k}{\hbar}t}
+  aplicando exponencial tenemos que 
+  \ecc{\exp\p{\ln(\dfrac{f(t)}{f(0)})}=\exp\p{-i\dfrac{k}{\hbar}t}\implies \dfrac{f(t)}{f(0)}=\exp\p{-i\dfrac{k}{\hbar}t}}
+  por lo tanto, la solución temporal es 
+  \ecc{f(t)=f(0)\exp\p{-i\dfrac{k}{\hbar}t}}
+Ahora con la parte independiente del tiempo 
+\ecc{\dfrac{1}{\phi(x)}\p{-\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}+V(x)}\phi(x)=k}
+si consideramos que la partícula no está sujeta a ningún potencial \ec{V(x)=0}, entonces
+\ecc{\dfrac{1}{\phi(x)}\p{-\dfrac{\hbar^2}{2m}\dfrac{\partial^2 \phi(x)}{\partial x^2}}=k\implies \dfrac{\partial^2 \phi(x)}{\partial x^2}=-\dfrac{2m}{\hbar^2}k\phi(x)}
+ahora tenemos una ecuación diferencial parcial de segundo orden, entonces hacemos una nueva constante de separación positiva
+\ecc{a^2=\dfrac{2m}{\hbar^2}k}
+entonces
+\ecc{\dfrac{d^2 \phi(x)}{d x^2}=-a\phi(x)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  \item En clase hicimos los cálculos suponiendo que el potencial tomaba valores en los reales. Escribe ahora
+  \ecc{V=V_0-i\Gamma,}
+  con \ec{V_0} y \ec{\Gamma} en los reales.
+      \begin{enumerate}
+          \item Muestra que en el lugar de la conservación de la probabilidad que encontramos en clase, encontramos que 
+          \ecc{\dfrac{dP}{dt}=-\dfrac{2\Gamma}{\hbar}P.}
+          
+          
+          
+          
+          
+          \item Resuelve la ecuación diferencial para \ec{P(t)}, y compáralo con la expresión de decaimiento de una partícula inestable, y ya que estamos en eso, expresa la vida media en términos de \ec{\Gamma  }.
+      \end{enumerate}
+  
+  
+  
+  
+  
+  
+  
+  
+\end{enumerate}
+
+
+%\begin{multicols}{2}
+%\small{\bibliographystyle{apalike}
+%\bibliography{bib}}
+%\end{multicols}
+
+
+
+%\ftikz{1.5}{figuras/fig.tikz}{}{fig:x}
+
+\end{document}
+
+
+

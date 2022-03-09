@@ -1,0 +1,130 @@
+\input{style/settings}
+\input{style/short_commands}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{página\;\thepage/\pageref{LastPage}}
+\fancyhead[L]{Osvaldo Uriel Calderón Dorantes}
+\fancyfoot[L]{Seguridad Radiológica}
+\fancyfoot[R]{Facultad de Ciencias, UNAM \includegraphics[scale=0.13]{style/Sheikah.pdf}}
+\fancypagestyle{plain}{
+  \fancyfoot[C]{}
+}
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{flushleft}
+Osvaldo Uriel Calderón Dorantes, \hfill Seguridad Radiológica\\
+316005171 \hfill osvaldo13576@ciencias.unam  \\
+Facultad de Ciencias\\
+\underline{Universidad Nacional Autónoma de México}
+\end{flushleft}
+
+\begin{flushright}\vspace{-5mm}
+\includegraphics[height=1.5cm]{style/logo.pdf}
+\end{flushright}
+ 
+\begin{center}\vspace{-1cm}
+\textbf{ \large \customfont{Tarea 1}}\\
+\today
+\end{center}
+\medskip\hrule\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\small \textbf{Nota: A las unidades las pondré dentro de corchetes \ec{\cor{\tx{\customfont{UNIDAD}}}} para no confundir entre variables y realizar el análisis dimensional fácilmente.}}
+\medskip\hrule\bigskip
+
+\newlength{\strutheight}
+\settoheight{\strutheight}{\strut}
+
+
+Recordemos que la ecuación que relaciona energía, masa y velocidad está dada como
+\eq{e:emc2}{E=mc^2}
+donde \ec{c=3\times10^{8}[m\cdot s^{-1}]} es la velocidad de la luz. Además la relación entre la unidad de energía 
+\eq{e:j}{1[J]=1[kg\cdot m^2\cdot s^{-2}]}
+y lo anterior se relaciona con el potencial eléctrico como
+\eq{e:v}{1[V]=1[J\cdot C^{-1}]}
+con la carga eléctrica y la unidad de masa atómica como 
+\begin{align}
+  e&=1.60218\times10^{-19}[C]\label{e:e}\\
+  1[uma]&=1.66054\times10^{-27}[kg]\label{e:uma}
+\end{align}
+
+
+\begin{enumerate}[1.]
+\item  Calcula la energía que le corresponde a un protón, cuya masa atómica es de \ec{1.6725\times 10^{-24}[g]}.
+
+\section{Solución Ejercicio 1.}
+
+Para este caso tenemos que \ec{m=1.6725\times 10^{-24}[g]=1.6725\times 10^{-27}[kg]}, por lo tanto la energía es
+\al{E&=mc^2\\
+     &=(1.6725\times 10^{-27}[kg])(3\times10^{8}[m\cdot s^{-1}])^2\\
+     &=(1.6725\times 10^{-27})(9\times10^{16})[kg\cdot m^2\cdot s^{-2}]\\
+     &=(1.6725\times 10^{-27})(9\times10^{16})[J]\times\p{\dfrac{e}{e}}\\
+     &=(1.6725\times 10^{-27})(9\times10^{16})[J]\times\p{\dfrac{e}{1.60218\times10^{-19}[C]}}\\
+     &=(1.6725\times 10^{-27})(9\times10^{10})\times\p{\dfrac{1}{1.60218\times10^{-19}}}[10^6\times e\cdot J\cdot C^{-1}]\\
+     &=(1.6725\times 10^{-27})(9\times10^{10})\times\p{\dfrac{1}{1.60218\times10^{-19}}}[MeV]\\
+     &=\dfrac{(1.6725)(9)\times10^{2}}{1.60218}[MeV]\\
+     &=939.5012[MeV]
+     }
+
+\pagebreak
+
+\item Calcula el equivalente de \ec{1[uma]} a \ec{MeV}.
+
+
+
+
+\section{Solución Ejercicio 2.}
+
+
+Para este caso tenemos que \ec{m=1[uma]=1.66054\times10^{-27}[kg]}, por lo tanto la energía es
+\al{E&=mc^2\\
+     &=(1.66054\times 10^{-27}[kg])(3\times10^{8}[m\cdot s^{-1}])^2\\
+     &=(1.66054\times 10^{-27})(9\times10^{16})[kg\cdot m^2\cdot s^{-2}]\\
+     &=(1.66054\times 10^{-27})(9\times10^{16})[J]\times\p{\dfrac{e}{e}}\\
+     &=(1.66054\times 10^{-27})(9\times10^{16})[J]\times\p{\dfrac{e}{1.60218\times10^{-19}[C]}}\\
+     &=(1.66054\times 10^{-27})(9\times10^{10})\times\p{\dfrac{1}{1.60218\times10^{-19}}}[10^6\times e\cdot J\cdot C^{-1}]\\
+     &=(1.66054\times 10^{-27})(9\times10^{10})\times\p{\dfrac{1}{1.60218\times10^{-19}}}[MeV]\\
+     &=\dfrac{(1.66054)(9)\times10^{2}}{1.60218}[MeV]\\
+     &=932.78283[MeV]
+     }
+
+
+\item Calcula la energía en \ec{MeV} para un neutrón, cuya masa es de \ec{1.0086654[uma]}.
+
+\section{Solución Ejercicio 3.}
+
+Para este caso tenemos que \ec{m=1.0086654[uma]=1.0086654\times 1.66054\times10^{-27}[kg]}, por lo tanto la energía es
+\al{E&=mc^2\\
+     &=(1.0086654\times 1.66054\times 10^{-27}[kg])(3\times10^{8}[m\cdot s^{-1}])^2\\
+     &=(1.0086654\times 1.66054\times 10^{-27})(9\times10^{16})[kg\cdot m^2\cdot s^{-2}]\\
+     &=(1.0086654\times 1.66054\times 10^{-27})(9\times10^{16})[J]\times\p{\dfrac{e}{e}}\\
+     &=(1.0086654\times 1.66054\times 10^{-27})(9\times10^{16})[J]\times\p{\dfrac{e}{1.60218\times10^{-19}[C]}}\\
+     &=(1.0086654\times 1.66054\times 10^{-27})(9\times10^{10})\times\p{\dfrac{1}{1.60218\times10^{-19}}}[10^6\times e\cdot J\cdot C^{-1}]\\
+     &=(1.0086654\times 1.66054\times 10^{-27})(9\times10^{10})\times\p{\dfrac{1}{1.60218\times10^{-19}}}[MeV]\\
+     &=\dfrac{(1.0086654\times 1.66054)(9)\times10^{2}}{1.60218}[MeV]\\
+     &=940.8657698[MeV]
+     }
+
+\end{enumerate}
+
+
+%\begin{multicols}{2}
+%\small{\bibliographystyle{apalike}
+%\bibliography{bib}}
+%\end{multicols}
+
+
+
+%\ftikz{1.5}{figuras/fig.tikz}{}{fig:x}
+
+\end{document}
+
+
+
+}
