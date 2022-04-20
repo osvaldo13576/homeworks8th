@@ -1,7 +1,7 @@
-PWD /home/osvaldo13576/Documentos/Github/homeworks8th/Seguridad Radiológica/Tarea2
+PWD /home/osvaldo13576/Documentos/Github/homeworks8th/Seguridad Radiológica/Examen1
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/osvaldo13576/Documentos/Github/homeworks8th/Seguridad Radiológica/Tarea2/homework.tex
+INPUT /home/osvaldo13576/Documentos/Github/homeworks8th/Seguridad Radiológica/Examen1/homework.tex
 OUTPUT homework.log
 INPUT ./style/settings
 INPUT ./style/settings
@@ -1524,21 +1524,8 @@ INPUT ./t1custom.fd
 INPUT t1custom.fd
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT custom.tfm
-INPUT ./figuras/ph.png
-INPUT ./figuras/ph.png
-INPUT figuras/ph.png
-INPUT ./figuras/ph.png
-INPUT ./figuras/ph.png
-INPUT /usr/share/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
-INPUT /usr/share/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
-INPUT /usr/share/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
-INPUT /usr/share/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
-INPUT /usr/share/texmf-dist/fonts/tfm/public/libertine/LinLibertineMT-tlf-t1.tfm
-INPUT ./figuras/fig_conf_elec.png
-INPUT ./figuras/fig_conf_elec.png
-INPUT figuras/fig_conf_elec.png
-INPUT ./figuras/fig_conf_elec.png
-INPUT ./figuras/fig_conf_elec.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT ./style/Sheikah.pdf
 INPUT ./style/Sheikah.pdf
 INPUT style/Sheikah.pdf
@@ -1546,18 +1533,36 @@ INPUT ./style/Sheikah.pdf
 INPUT ./style/Sheikah.pdf
 INPUT /usr/share/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/public/libertine/LinLibertineMT-tlf-t1.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/public/libertine/LinLibertineMT-tlf-t1--base.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT ./style/Sheikah.pdf
+INPUT ./style/Sheikah.pdf
+INPUT style/Sheikah.pdf
+INPUT ./style/Sheikah.pdf
+INPUT ./figuras/fig_p20_ex.pdf
+INPUT ./figuras/fig_p20_ex.pdf
+INPUT ./figuras/fig_p20_ex.pdf
+INPUT ./figuras/fig_p20_ex.pdf
+INPUT ./figuras/fig_p20_ex.pdf
+INPUT ./style/Sheikah.pdf
+INPUT ./style/Sheikah.pdf
+INPUT style/Sheikah.pdf
+INPUT ./style/Sheikah.pdf
 INPUT homework.aux
 INPUT ./homework.out
 INPUT ./homework.out
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc
 INPUT /usr/share/texmf-dist/fonts/enc/ttf2pk/base/T1-WGL4.enc
 INPUT custom.ttf
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc
-INPUT /usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb

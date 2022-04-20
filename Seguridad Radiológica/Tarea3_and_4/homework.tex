@@ -1,0 +1,290 @@
+\input{style/settings}
+\input{style/short_commands}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{página\;\thepage/\pageref{LastPage}}
+\fancyhead[L]{Osvaldo Uriel Calderón Dorantes}
+\fancyfoot[L]{Seguridad Radiológica}
+\fancyfoot[R]{Facultad de Ciencias, UNAM \includegraphics[scale=0.13]{style/Sheikah.pdf}}
+\fancypagestyle{plain}{
+  \fancyfoot[C]{}
+}
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{flushleft}
+Osvaldo Uriel Calderón Dorantes, \hfill Seguridad Radiológica\\
+316005171 \hfill osvaldo13576@ciencias.unam  \\
+Facultad de Ciencias\\
+\underline{Universidad Nacional Autónoma de México}
+\end{flushleft}
+
+\begin{flushright}\vspace{-5mm}
+\includegraphics[height=1.5cm]{style/logo.pdf}
+\end{flushright}
+ 
+\begin{center}\vspace{-1cm}
+\textbf{ \large \customfont{Tarea 3 \& Tarea 4}}\\
+%\today
+\today
+\end{center}
+%\medskip\hrule\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%{\small \textbf{Nota: A las unidades las pondré dentro de corchetes \ec{\cor{\tx{\customfont{UNIDAD}}}} para no confundir entre variables y realizar el análisis dimensional fácilmente.}}
+\medskip\hrule\bigskip
+
+\newlength{\strutheight}
+\settoheight{\strutheight}{\strut}
+
+\begin{center}
+  \textbf{ \large \customfont{Tarea 3}}\\
+\end{center}
+
+Recolectamos los datos de las energías máximas para las \ec{\beta} y \ec{\alpha} en cada radionúclido desde la página \href{https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html}{IAEA}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|
+  >{\columncolor[HTML]{000000}}c |c|l|c|}
+  \hline
+  \cellcolor[HTML]{C0C0C0}Radionúclido & \cellcolor[HTML]{C0C0C0}Modo de Decaimiento & \cellcolor[HTML]{C0C0C0}\ec{E_{\tx{máx}}\;[MeV]} & \cellcolor[HTML]{C0C0C0}URL  \\ \hline
+  {\color[HTML]{FFFFFF} \ec{^{18}F}}            & \ec{\beta^+}                                           & \ec{E_{\beta\tx{máx}}=0.6335[MeV]}                            & \href{https://www-nds.iaea.org/relnsd/vcharthtml/betashape.html\#NUCID=18F\&LEVEL=0\&DECTYPE=1\&DS_SEQNO=101102}{Ver espectro}                          \\ \hline
+  {\color[HTML]{FFFFFF} \ec{^{14}C}}            & \ec{\beta^-}                                           & \ec{E_{\beta\tx{máx}}=0.156475[MeV]}                            & \href{https://www-nds.iaea.org/relnsd/vcharthtml/betashape.html\#NUCID=14C\&LEVEL=0\&DECTYPE=2\&DS_SEQNO=103067}{Ver espectro}                          \\ \hline
+  {\color[HTML]{FFFFFF} \ec{^{32}P}}            & \ec{\beta^-}                                           & \ec{E_{\beta\tx{máx}}=1.71066[MeV]}                            & \href{https://www-nds.iaea.org/relnsd/vcharthtml/betashape.html\#NUCID=32P\&LEVEL=0\&DECTYPE=2\&DS_SEQNO=102853}{Ver espectro}                          \\ \hline
+  {\color[HTML]{FFFFFF} \ec{^{131}I}}           & \ec{\beta^-}                                          & \ec{E_{\beta\tx{máx}}=0.8069[MeV]}                                    & \href{https://www-nds.iaea.org/relnsd/vcharthtml/betashape.html\#NUCID=131I\&LEVEL=0\&DECTYPE=2\&DS_SEQNO=101587}{Ver espectro}                          \\ \hline
+  {\color[HTML]{FFFFFF} \ec{^{222}Rn}}          & \ec{\alpha}                                           & \ec{E_{\alpha\tx{máx}}=5.48948 [MeV]}                            & \href{https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html}{Ver energía}                                                                           \\ \hline
+  {\color[HTML]{FFFFFF} \ec{^{225}Ac}}          & \ec{\alpha}                                           & \ec{E_{\alpha\tx{máx}}= 5.832 [MeV]}                            & \href{https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html}{Ver energía}                                                                         \\ \hline
+  \end{tabular}
+  \caption{}
+  \label{tab:my-table}
+  \end{table}
+
+Observamos que los radionúclidos cuyo modo de decaimiento dominante es la ecuación \ec{\beta} están dentro del rango \ecc{0.01[MeV]\leq E_{\beta\tx{máx}}\leq 2.5[MeV]}
+empleamos la ecuación \ref{e:ab} para calcular el alcance en aire
+
+\eq{e:ab}{R_{\beta,\tx{aire}}=\dfrac{412{E_{\beta\tx{máx}}}^{1.265-0.0954\ln(E_{\beta\tx{máx}})}}{\rho_m}}
+
+y el alcance en algún tejido, por ejemplo, el tejido biológico humano \ec{\rho_t} dada en la ecuación \ref{e:bt}
+
+\eq{e:bt}{R_{\beta,\tx{tejido}}=R_{\beta,\tx{aire}}\dfrac{\rho_m}{\rho_t}}
+
+
+y para los radionúclidos con modo de decaimiento dominante \ec{\alpha} están dentro del rango \ecc{4[MeV]\leq E_{\alpha\tx{máx}}\leq 8[MeV]}
+
+se emplea la ecuación \ref{e:aa} para calcular el alcance en aire
+\eq{e:aa}{R_{\alpha,\tx{aire}}=1.24 E_{\alpha\tx{máx}}-2.62}
+
+y para el alcance en tejido se emplea la ecuación \ref{e:at}
+
+\eq{e:at}{R_{\alpha,\tx{tejido}}=R_{\alpha,\tx{aire}}\dfrac{\rho_m}{\rho_t}}
+
+Las ecuaciones anteriores toman energía en unidades de \ec{[MeV]} y para la densidad \ec{[mg/cm^3]} para obtener los alcances en \ec{[cm]}. Donde la densidad en aire es \ec{\rho_m=1.293[mg/cm^3]} y la densidad en tejido es \ec{\rho_t=1000[mg/cm^3]}, tomando la aproximación de la densidad en agua.
+
+
+
+\begin{enumerate}[1.]
+\item  Calcular los alcances de los siguientes radionúclidos:
+
+
+\begin{enumerate}
+  \item \ec{^{18}F}
+  
+\begin{itemize}
+  \item Calculando el alcance en aire tenemos que 
+  \al{R_{\beta,\tx{aire}}(\;^{18}F)&=\dfrac{412{E_{\beta\tx{máx}}}((\;^{18}F))^{1.265-0.0954\ln(E_{\beta\tx{máx}}(\;^{18}F))}}{\rho_m}\\
+  &=\dfrac{412\cdot{0.6335}^{1.265-0.0954\ln(0.6335)}}{1.293}[cm]\\
+  &=175.3373[cm]
+  }
+  \item Calculando el alcance en tejido
+  \al{R_{\beta,\tx{tejido}}(\;^{18}F)&=R_{\beta,\tx{aire}}(\;^{18}F)\dfrac{\rho_m}{\rho_t}\\
+  &= (175.3373)\times\dfrac{1.293}{1000}[cm]\\
+  &=  0.2267 [cm]
+  }
+
+\end{itemize}
+
+  \item \ec{^{14}C}
+  
+
+  \begin{itemize}
+    \item Calculando el alcance en aire tenemos que 
+    \al{R_{\beta,\tx{aire}}(\;^{14}C)&=\dfrac{412{E_{\beta\tx{máx}}}((\;^{14}C))^{1.265-0.0954\ln(E_{\beta\tx{máx}}(\;^{14}C))}}{\rho_m}\\
+    &=\dfrac{412\cdot{0.156475}^{1.265-0.0954\ln(0.156475)}}{1.293}[cm]\\
+    &=21.9647[cm]
+    }
+    \item Calculando el alcance en tejido
+    \al{R_{\beta,\tx{tejido}}(\;^{14}C)&=R_{\beta,\tx{aire}}(\;^{14}C)\dfrac{\rho_m}{\rho_t}\\
+  &= (21.9647)\times\dfrac{1.293}{1000}[cm]\\
+  &=  0.0284 [cm]
+  }
+  \end{itemize}
+  
+  \item \ec{^{32}P}
+  
+  \begin{itemize}
+    \item Calculando el alcance en aire tenemos que 
+    \al{R_{\beta,\tx{aire}}(\;^{32}P)&=\dfrac{412{E_{\beta\tx{máx}}}((\;^{32}P))^{1.265-0.0954\ln(E_{\beta\tx{máx}}(\;^{32}P))}}{\rho_m}\\
+    &=\dfrac{412\cdot{1.71066}^{1.265-0.0954\ln(1.71066)}}{1.293}[cm]\\
+    &=611.3762[cm]
+    }
+    \item Calculando el alcance en tejido
+    \al{R_{\beta,\tx{tejido}}(\;^{32}P)&=R_{\beta,\tx{aire}}(\;^{32}P)\dfrac{\rho_m}{\rho_t}\\
+  &= (611.3762)\times\dfrac{1.293}{1000}[cm]\\
+  &=  0.7905 [cm]
+  }
+  \end{itemize}
+
+
+  \item \ec{^{131}I}
+  
+  \begin{itemize}
+    \item Calculando el alcance en aire tenemos que 
+    \al{R_{\beta,\tx{aire}}(\;^{131}I)&=\dfrac{412{E_{\beta\tx{máx}}}((\;^{131}I))^{1.265-0.0954\ln(E_{\beta\tx{máx}}(\;^{131}I))}}{\rho_m}\\
+    &=\dfrac{412\cdot{0.8069}^{1.265-0.0954\ln(0.8069)}}{1.293}[cm]\\
+    &=241.8346[cm]
+    }
+    \item Calculando el alcance en tejido
+    \al{R_{\beta,\tx{tejido}}(\;^{131}I)&=R_{\beta,\tx{aire}}(\;^{131}I)\dfrac{\rho_m}{\rho_t}\\
+  &= (241.8346)\times\dfrac{1.293}{1000}[cm]\\
+  &=  0.3127 [cm]
+  }
+  \end{itemize}
+
+  
+  \item \ec{^{222}Rn}
+  
+  
+  \begin{itemize}
+    %R_{\alpha,\tx{aire}}=1.24 E_{\alpha\tx{máx}}-2.62
+    \item Calculando el alcance en aire tenemos que 
+    \al{R_{\alpha,\tx{aire}}(\;^{222}Rn)&=1.24 \cdot E_{\alpha\tx{máx}}(\;^{222}Rn)-2.62\\
+    &=1.24 \cdot 5.48948-2.62\\
+    &=4.1870[cm]
+    }
+    \item Calculando el alcance en tejido
+    \al{R_{\alpha,\tx{tejido}}(\;^{222}Rn)&=R_{\alpha,\tx{aire}}(\;^{222}Rn)\dfrac{\rho_m}{\rho_t}\\
+  &= (4.1870)\times\dfrac{1.293}{1000}[cm]\\
+  &=  0.00541 [cm]
+  }
+  \end{itemize}
+
+
+  
+  \item \ec{^{225}Ac}
+  
+  \begin{itemize}
+    %R_{\alpha,\tx{aire}}=1.24 E_{\alpha\tx{máx}}-2.62
+    \item Calculando el alcance en aire tenemos que 
+    \al{R_{\alpha,\tx{aire}}(\;^{225}Ac)&=1.24 \cdot E_{\alpha\tx{máx}}(\;^{225}Ac)-2.62\\
+    &=1.24 \cdot 5.832-2.62\\
+    &=4.6117[cm]
+    }
+    \item Calculando el alcance en tejido
+    \al{R_{\alpha,\tx{tejido}}(\;^{225}Ac)&=R_{\alpha,\tx{aire}}(\;^{225}Ac)\dfrac{\rho_m}{\rho_t}\\
+  &= (4.6117)\times\dfrac{1.293}{1000}[cm]\\
+  &=  0.00596 [cm]
+  }
+  \end{itemize}
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\begin{center}
+  \textbf{ \large \customfont{Tarea 4}}\\
+\end{center}
+
+\begin{enumerate}[1.]
+\item  ¿Qué es el valor \ec{Q} y qué implica cuando es positivo y cuando es negativo?
+
+Este concepto está relacionado con las reacciones nucleares y se define como la diferencia entre las energías en reposo de los productos y reactivos dada en la ecuación \ref{e:Q}.
+
+\eq{e:Q}{Q=\Delta m c^2}
+
+¿Q1ué implica que el valor \ec{Q} sea positivo o negativo?
+
+\dcasos{
+  Q<0 \implies & \tx{energía a masa, reacción endotérmica}\\
+  Q>0 \implies & \tx{masa a energía, reacción exotérmica}\\
+ }
+ 
+Lo anterior significa que el valor \ec{Q} determinará la energía mínima en la que puede ocurrir una reacción nuclear. Entonces, si la reacción ocurre que \ec{Q<0} (endotérmica), la excitación es lo suficientemente alta como para superar la barrera de activación de la reacción.
+
+De manera general el valor \ec{Q}, dada una reacción \ec{A+b\longrightarrow C+d}, el valor \ec{Q} se define como 
+\ecc{Q=\cor{m_A+m_b-m_C-m_d}c^2}
+donde las masas \ec{m_X} se refieren a los respectivos núcleos en la reacción.
+
+\pagebreak
+
+\item ¿Cómo se calcula para este valor para el decaimiento alfa beta y demás decaimientos?
+
+
+\begin{itemize}
+  \item \textbf{Decaimiento \ec{\alpha}}:
+  
+Se considera la reacción del decaimiento 
+\ecc{^A_Z X_N\longrightarrow\;^{A-4}_{Z-2}Y_{N-2}+\alpha}
+determinar el valor \ec{Q} toma en cuenta la conservación del momento lineal
+\ecc{m_Xc^2=m_Yc^2+T_Y+m_\alpha c^2+T_\alpha\implies \p{m_X+m_Y-m_\alpha}c^2=T_Y+T_\alpha}
+donde \ec{T_Y} y \ec{T_\alpha} son las energías cinéticas de los núcleos \ec{Y} y \ec{\alpha} respectivamente. Entonces, la cantidad anterior es la energía neta liberada que es el valor \ec{Q} de la reacción
+\ecc{Q_\alpha=\p{m_X+m_Y-m_\alpha}c^2}
+
+  \item \textbf{Decaimiento \ec{\beta^-}}:
+  
+En este modo de decaimiento se considera la reacción
+\ecc{^A_Z X_N \longrightarrow\;^{A}_{Z+1}Y_{N-1}+\beta^-+\bar{\nu}}
+cuyo valor \ec{Q} se calcula como
+
+\ecc{Q_{\beta^-}=\p{m(\;^AZ)-m(\;^A Y)}c^2}
+
+
+
+  \item \textbf{Decaimiento \ec{\beta^+}}:
+Este decaimiento sigue la reacción
+\ecc{ ^A_Z X_N \longrightarrow\;^{A}_{Z-1}Y_{N+1}+\beta^+ +\nu}
+Cuyo valor \ec{Q} se calcula como
+\ecc{Q_{\beta^+}=\p{m(\;^AZ)-m(\;^A Y)-2m_e}c^2}
+
+  \item \textbf{Captura electrónica}: 
+  En la captura electrónica ocurre la reacción 
+ \ecc{^A_Z X_N +e^- \longrightarrow\;^{A}_{Z-1}Y_{N+1}+\nu}
+ donde su valor \ec{Q} se calcula como
+ \ecc{Q_{EC}=\cor{m(\;^AX)-m(\;^A Y)}c^2-B_n}
+donde \ec{B_n} es la energía de ligadura del electrón en las capas \ec{n=K,L,M,N...}, además, \ec{c^2=931.5[MeV\cdot uma^{-1}]} en todos los casos.
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+%\begin{multicols}{2}
+%\small{\bibliographystyle{apalike}
+%\bibliography{bib}}
+%\end{multicols}
+
+
+
+%\ftikz{1.5}{figuras/fig.tikz}{}{fig:x}
+
+\end{document}
+
+
+
+}
