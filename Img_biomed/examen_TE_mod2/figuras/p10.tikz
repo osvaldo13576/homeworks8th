@@ -1,0 +1,87 @@
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,326); %set diagram left start at 0, and has height of 326
+
+%Right Arrow [id:dp38431386514213384] 
+\draw  [fill={rgb, 255:red, 248; green, 231; blue, 28 }  ,fill opacity=1 ] (79,178.19) -- (115.06,178.19) -- (115.06,173.35) -- (139.1,183.03) -- (115.06,192.7) -- (115.06,187.86) -- (79,187.86) -- cycle ;
+%Right Arrow [id:dp5097323631814934] 
+\draw  [fill={rgb, 255:red, 248; green, 231; blue, 28 }  ,fill opacity=1 ] (79,245.89) -- (115.06,245.89) -- (115.06,241.05) -- (139.1,250.73) -- (115.06,260.4) -- (115.06,255.56) -- (79,255.56) -- cycle ;
+
+%Shape: Square [id:dp9700058508659903] 
+\draw   (171.37,146.63) -- (241,146.63) -- (241,216.27) -- (171.37,216.27) -- cycle ;
+%Shape: Square [id:dp6647608231464432] 
+\draw   (241,146.63) -- (310.63,146.63) -- (310.63,216.27) -- (241,216.27) -- cycle ;
+%Shape: Square [id:dp9470626137808097] 
+\draw   (171.37,216.27) -- (241,216.27) -- (241,285.9) -- (171.37,285.9) -- cycle ;
+%Shape: Square [id:dp6934922046398575] 
+\draw   (241,216.27) -- (310.63,216.27) -- (310.63,285.9) -- (241,285.9) -- cycle ;
+%Right Arrow [id:dp9756427982080893] 
+\draw  [fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=1 ] (368.07,96.4) -- (342.57,121.9) -- (346,125.32) -- (322.15,135.48) -- (332.31,111.64) -- (335.73,115.06) -- (361.23,89.56) -- cycle ;
+%Right Arrow [id:dp013401802634246729] 
+\draw  [fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=1 ] (391.65,119.98) -- (366.16,145.48) -- (369.58,148.9) -- (345.74,159.06) -- (355.89,135.22) -- (359.32,138.64) -- (384.81,113.14) -- cycle ;
+%Right Arrow [id:dp05343926392193121] 
+\draw  [fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=1 ] (343.78,72.11) -- (318.29,97.61) -- (321.71,101.03) -- (297.87,111.19) -- (308.02,87.35) -- (311.44,90.77) -- (336.94,65.27) -- cycle ;
+
+%Right Arrow [id:dp9535963760890628] 
+\draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (121.58,90.85) -- (147.07,116.35) -- (150.49,112.93) -- (160.65,136.77) -- (136.81,126.61) -- (140.23,123.19) -- (114.73,97.69) -- cycle ;
+%Right Arrow [id:dp25151810595171387] 
+\draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (145.16,67.27) -- (170.66,92.77) -- (174.08,89.35) -- (184.23,113.19) -- (160.39,103.03) -- (163.81,99.61) -- (138.32,74.11) -- cycle ;
+%Right Arrow [id:dp6111481595320248] 
+\draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (97.29,115.14) -- (122.78,140.64) -- (126.21,137.22) -- (136.36,161.06) -- (112.52,150.9) -- (115.94,147.48) -- (90.45,121.98) -- cycle ;
+
+%Right Arrow [id:dp04606191955719341] 
+\draw  [fill={rgb, 255:red, 189; green, 16; blue, 224 }  ,fill opacity=1 ] (275.74,55.83) -- (275.74,91.89) -- (280.58,91.89) -- (270.9,115.93) -- (261.23,91.89) -- (266.06,91.89) -- (266.06,55.83) -- cycle ;
+%Right Arrow [id:dp3855216550911046] 
+\draw  [fill={rgb, 255:red, 189; green, 16; blue, 224 }  ,fill opacity=1 ] (208.04,55.83) -- (208.04,91.89) -- (212.88,91.89) -- (203.2,115.93) -- (193.52,91.89) -- (198.36,91.89) -- (198.36,55.83) -- cycle ;
+
+%Shape: Brace [id:dp5692668571745138] 
+\draw   (410,109.7) .. controls (413.35,106.45) and (413.4,103.15) .. (410.15,99.8) -- (389.49,78.5) .. controls (384.85,73.71) and (384.2,69.7) .. (387.55,66.45) .. controls (384.2,69.7) and (380.21,68.93) .. (375.56,64.15)(377.65,66.3) -- (354.9,42.85) .. controls (351.65,39.5) and (348.35,39.45) .. (345,42.7) ;
+%Shape: Brace [id:dp9232322927362777] 
+\draw   (279.9,36.37) .. controls (279.87,31.7) and (277.52,29.39) .. (272.85,29.42) -- (247.08,29.61) .. controls (240.41,29.66) and (237.06,27.35) .. (237.03,22.68) .. controls (237.06,27.35) and (233.75,29.7) .. (227.08,29.75)(230.08,29.73) -- (201.32,29.94) .. controls (196.65,29.97) and (194.34,32.32) .. (194.37,36.99) ;
+%Shape: Brace [id:dp9305641238645976] 
+\draw   (133.9,49.37) .. controls (130.57,46.1) and (127.27,46.12) .. (124,49.44) -- (104.43,69.33) .. controls (99.75,74.08) and (95.75,74.82) .. (92.42,71.54) .. controls (95.75,74.82) and (95.07,78.83) .. (90.4,83.58)(92.5,81.44) -- (70.82,103.47) .. controls (67.55,106.79) and (67.57,110.09) .. (70.9,113.37) ;
+%Shape: Brace [id:dp8370829272018719] 
+\draw   (50.9,173.37) .. controls (46.23,173.37) and (43.9,175.7) .. (43.9,180.37) -- (43.9,205.87) .. controls (43.9,212.54) and (41.57,215.87) .. (36.9,215.87) .. controls (41.57,215.87) and (43.9,219.2) .. (43.9,225.87)(43.9,222.87) -- (43.9,251.37) .. controls (43.9,256.04) and (46.23,258.37) .. (50.9,258.37) ;
+
+% Text Node
+\draw (199,171.33) node [anchor=north west][inner sep=0.75pt]  [font=\huge]  {$9$};
+% Text Node
+\draw (265,172.33) node [anchor=north west][inner sep=0.75pt]  [font=\huge]  {$3$};
+% Text Node
+\draw (198,240.33) node [anchor=north west][inner sep=0.75pt]  [font=\huge]  {$2$};
+% Text Node
+\draw (265,241.33) node [anchor=north west][inner sep=0.75pt]  [font=\huge]  {$5$};
+% Text Node
+\draw (397,39.33) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$1$};
+% Text Node
+\draw (231.27,-4.67) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$2$};
+% Text Node
+\draw (76.27,47.1) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$3$};
+% Text Node
+\draw (17.27,203.1) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$4$};
+% Text Node
+\draw (342,51.93) node [anchor=north west][inner sep=0.75pt]    {$9$};
+% Text Node
+\draw (363,73.93) node [anchor=north west][inner sep=0.75pt]    {$5$};
+% Text Node
+\draw (391,95.93) node [anchor=north west][inner sep=0.75pt]    {$5$};
+% Text Node
+\draw (197,34.93) node [anchor=north west][inner sep=0.75pt]    {$11$};
+% Text Node
+\draw (263,34.93) node [anchor=north west][inner sep=0.75pt]    {$8$};
+% Text Node
+\draw (81,100.93) node [anchor=north west][inner sep=0.75pt]    {$2$};
+% Text Node
+\draw (101,75.93) node [anchor=north west][inner sep=0.75pt]    {$14$};
+% Text Node
+\draw (126,53.93) node [anchor=north west][inner sep=0.75pt]    {$3$};
+% Text Node
+\draw (56,173.93) node [anchor=north west][inner sep=0.75pt]    {$12$};
+% Text Node
+\draw (59,240.93) node [anchor=north west][inner sep=0.75pt]    {$7$};
+
+
+\end{tikzpicture}

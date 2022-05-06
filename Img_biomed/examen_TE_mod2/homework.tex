@@ -46,30 +46,109 @@ Módulo MEDICINA NUCLEAR}}\\
 \textbf{Parte teórica}: Investigue (citando fuentes) o explique con base en lo visto en clase la respuesta a las siguientes preguntas, sea conciso:
 
 \begin{enumerate}[1.]
-  \item Explique en 10 renglones (máximo) el funcionamiento del generador de \ec{^{99m}Tc}.
+  \item Explique en 10 renglones (máximo) el funcionamiento del generador de \ec{^{99m}}Tc.
+  
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./figuras/tc_gen.pdf}
+    \caption{Diagrama de un generador de \ec{^{99m}}Tc. La figura se recuperó de \citet{andre}.}
+    \label{p1:tc_gen}
+    \end{figure}
+
+
+El generador emplea el radionúclido de \ec{^{99}}Mo para producir \ec{^{99m}}Tc que emite fotones gamma de energía de \ec{140\un{MeV}}.  En la figura \ref{p1:tc_gen} se describe el proceso, del ion de molibdato MoO\ec{_4^{2-}} se obtiene el pertecnetato \ec{^{99m}}TcO\ec{_4^{-}} a partir del eluyente salino. La separación o \textit{lavado} se da gracias a que los iones de molibdato quedan adheridos a una columna de alúmina Al\ec{_2}O\ec{_3} ya que no es soluble en solución salina, entonces cuando se requiere el \ec{^{99m}}Tc se agrega solución salina al generador se obtiene este tecnecio metaestable como pertecnetato de sodio \ec{^{99m}}TcO\ec{_4}Na \citep{guy,IM}.
+
+
+
+
+
+
+
   \item Explique en 10 renglones (máximo) el método de reconstrucción iterativa mencionando sus ventajas sobre la retroproyección filtrada para estudios SPECT.
+  
+El método de reconstrucción iterativa consiste en realizar una estimación inicial de la distribución de actividad del objeto a estudiar, luego, se calcula la proyección estimada proyectando hacia adelante o reproyección. Entones, según la comparación entre las proyecciones medidas y estimadas, la estimación inicial se ajusta de acuerdo a un criterio el cual deberá converger a la solución deseada, así que este proceso de reproyectar, comparar, retroproyectar y ajustar se repite hasta que la estimación se ajusta a la solución deseada \citep{smith}. Las ventajas con respecto a la retroproyección filtrada es que se obtiene una imagen con bajo ruido, se eliminan los artefactos de estrella, además en caso de tener datos faltantes el algoritmo sigue cumpliendo su función de reconstrucción de imagen \citep{smith,IM}.
+
+
+
+
+\pagebreak
+
+
+
+
+
   \item Investigue y explique 2 aplicaciones clínicas de las siguientes técnicas de Medicina Nuclear, 5   renglones máximo por aplicación:
   \begin{enumerate}[a.]
     \item Gammagrafía.
     \begin{itemize}
-      \item \textbf{Primera aplicación.}
-      \item \textbf{Segunda aplicación.}
+      \item \textbf{Primera aplicación.} Estudio de gammagrafía ósea para el estudio morfofuncional del esqueleto que se basa en la distribución del radiotrazador en la matriz mineral ósea, estudios de los cuales se puede determinar la ubicación de tumores primarios o secundarios por metástasis \citep{app1}.
+      
+
+
+      \item \textbf{Segunda aplicación.} Aplicación de gammagrafía de perfusión miocárdica que se emplea para el estudio del flujo sanguíneo regional coronario para el diagnóstico y pronóstico de la enfermedad coronaria  \citep{app2}.
     \end{itemize}
     \item SPECT.
     \begin{itemize}
-      \item \textbf{Primera aplicación.}
-      \item \textbf{Segunda aplicación.}
+      \item \textbf{Primera aplicación.} Se usa en el estudio de perfusión cerebral, el cual el metabolismo regional está relacionado con el flujo sanguíneo regional en donde se usan compuestos marcados con \ec{^{99m}}Tc, \ec{^{99m}}Tc-hexa-\linebreak metilpropilen-amina-oxima (HMPAO) o \ec{^{99m}}Tc-etinilescisteinato-dímero (ECD). Las imágenes obtenidas en este estudio se emplean definir el estado patológico y neurológico de un paciente \citep{app34}.
+      \item \textbf{Segunda aplicación.} Se emplea para la identificación de tumores neuroendocrinos desarrolladas a partir de células neuroendocrinas de pulmones, páncreas,  timo y glándulas suprarrenales empleando el radiotrazador \ec{^{111}}In en  \ec{^{111}}In-octreotido y el \ec{^{111}}In-pentetreotido \citep{app34}.
     \end{itemize}
     \item PET.
     \begin{itemize}
-      \item \textbf{Primera aplicación.}
-      \item \textbf{Segunda aplicación.}
+      \item \textbf{Primera aplicación.} Empleando la timidina de \ec{^{11}}C y la fluorotimidina \ec{^{18}}F  (FLT) es posible realizar estudios de proliferación celular cuyo interés clínico es la estadificación de cáncer de pulmón, evaluación de cáncer de cerebro y predictor de la respuesta tumoral \citep{app56}.
+      \item \textbf{Segunda aplicación.} En oncología, específicamente en el cáncer de carcinoma de colon primario, se emplea esta técnica para detectar esta neoplasia con una sensibilidad del \ec{90\%} contra el \ec{60\%} de la CT en estadios tempranos  \citep{app56}.
     \end{itemize}
   \end{enumerate}
-  \item ¿Cómo se define y para que se usa el valor SUV (Standardized uptake value)?
+  \item ¿Cómo se define y para qué se usa el valor SUV (Standardized uptake value)?
+  
+
+El valor SUV se define como se establece en la ecuación \ref{e:1} \citep{SUV2}:
+\eq{e:1}{SUV=\dfrac{r}{\p{a'/w}}}
+
+donde \ec{r} es la concentración de actividad radiactiva en unidades \ec{\un{kBq/ml}} que es medida por el escáner PET dentro de una región de interés (ROI), \ec{a'} es la cantidad de FDG inyectada y corregida debido a descomposición cuyas unidades son \ec{\un{kBq}} y \ec{w} es el pase del paciente en unidades \ec{\un{g}}, el cual se considera como sustituto de un volumen de distribución del trazador \citep{SUV2}. 
+
+
+Este valor es una medida semicuantitativa referente a la captación del tejido  y se ha empleado para entre niveles de captación ``normales'' y ``anormales''.  Para el hígado normal se tiene el rango \ec{2<SUV<5}, observemos que esta cantidad se considera adimensional ya que se hace la suposición que \ec{1\un{ml}} de tejido pesa \ec{1\un{g}} \citep{SUV1,SUV2}. Sin embargo, se toman en cuenta los factores que afectan al SUV y son la precisión en la calibración de la dosis, el tiempo pasado entre la inyección del radiofármaco y la toma de la imagen, peso del paciente, artefactos debido al movimiento y los niveles de glucosa en sangre del paciente \citep{SUV3}.
+
+
+
+
   \item ¿Cómo afecta el alcance del positrón en la calidad de imagen en PET?
-  \item Describa 2 factores influyen en la resolución espacial y en el contraste de las imágenes de MN. 2 factores por parámetro, 5 renglones máx. por parámetro.
+
+Recordemos que el alcance del positrón es la distancia entre el átomo emisor del positrón y del evento de aniquilación, independientemente de la trayectoria tomada por el positrón, el cual toma valores entre \ec{0.2} a \ec{2.0\un{mm}} según la energía cinética del radionúclido. De este parámetro físico, el cual depende de su energía máxima y en el medio en que se propagan, junto con otros e instrumentales definen \ec{FWHM} (Full Width at Half Maximum) que es la anchura a media altura el cual caracteriza la resolución espacial del sistema PET, el cual toma un valor de \ec{0.1} a \ec{2.5\un{mm}} según el diámetro del anillo de detectores del escáner  \citep{cherry,range_posi}. Por lo tanto, un aumento en el alcance del positrón proporciona un aumento en el valor \ec{FWHM} y se tendrá una degradación en la calidad de imagen.
+
+
+\pagebreak
+
+  \item Describa 2 factores influyen en la resolución espacial y en el contraste de las imágenes de MN. Dos factores por parámetro, 5 renglones máx. por parámetro.
+  
+
+\begin{enumerate}[a.]
+  \item Resolución espacial.
+  \begin{itemize}
+    \item \textbf{Primer factor}. En el colimador, la resolución espacial es dependiente de la geometría del colimador y en la pérdida de resolución es debido a un aumento entre la distancia fuente-colimador \citep{IM}. 
+    \item \textbf{Segundo factor}. En el sistema de detección, pueden ocurrir efectos físicos (dispersión múltiple) de los rayos gamma en donde dos tubos fotomultiplicadores registren un solo evento \citep{IM}.
+  \end{itemize}
+  \item Contraste.
+  \begin{itemize}
+    \item \textbf{Primer factor}. Un primer factor es la dispersión que ocurre dentro del paciente en donde los fotones llegan al sistema de detección con una linea de respuesta errónea \citep{IM}.
+    \item \textbf{Segundo factor}. En los sistema de imágenes de gamma cámara, el contraste se ve afectado por la penetración septal en donde ocurra una atenuación incompleta debido a las paredes delgadas del colimador permitiendo que el fotón ingrese al sistema de detección con una línea de respuesta errónea (la trayectoria del fotón no es paralela a las paredes del colimador)  \citep{IM}.
+  \end{itemize}
+\end{enumerate}
+
+
+
+
+
+
+
   \item ¿Qué es el efecto de volumen parcial en Medicina Nuclear?
+  
+Es un artefacto que es causado por la mezcla de tejidos con diferentes coeficientes de atenuación dentro de un voxel dado \citep{huda}. El artefacto surge por la finita resolución espacial del sistema de imágenes y degrada cuantitativamente la imagen, pues el efecto se refiere a que la intensidad del voxel no solo muestra la información de concentración de actividad dentro de este, sino que también la actividad de la región circundante    \citep{PVE}.
+
+
+
+
+
 
 \end{enumerate}
 
@@ -79,200 +158,104 @@ Módulo MEDICINA NUCLEAR}}\\
 
 \begin{enumerate}[1.]
   \setcounter{enumi}{7}
-  \item  Convertir \ec{5 \un{mCi} } a \ec{\un{MBq}}. ¿De qué orden de magnitud son las actividades que se inyectan en  estudios 18F - FDG?
-  \item 
+  \item  Convertir \ec{5 \un{mCi} } a \ec{\un{MBq}}. ¿De qué orden de magnitud son las actividades que se inyectan en  estudios \ec{^{18}}F-FDG?
+  
+
+Recordando que \ec{1\un{Ci}=37\un{GBq}}, podemos realizar el siguiente proceso
+
+\al{& 1\un{Ci}=37\un{GBq}\\
+\implies&1\un{Ci}\times 5=37\un{GBq}\times 5\\
+\implies&5\un{Ci}\times 10^{-3}=185\un{GBq}\times 10^{-3}\\
+\implies&5\un{mCi} =185\times10^{9}\times 10^{-3}\un{Bq}\\
+\implies&5\un{mCi} =185\times10^{6}\un{Bq}\\
+\therefore\quad&5\un{mCi} =185\un{MBq}
+}
+
+ Se administra el  \ec{^{18}}F-FDG vía intravenosa por inyección de 30 a 60 minutos antes del estudio de imagen, para un paciente de \ec{70\un{kg}} para un estudio PET se usan actividades entre \ec{5} y \ec{10\un{mCi}} (que equivalen a \ec{185} y \ec{370\un{MBq}}), para pacientes pediátricos es de \ec{2.6\un{mCi}} que equivale \ec{96.2\un{MBq}} \citep{fdg_f18}.
+
+
+
+  \item Enuncie las ecuaciones que describen el comportamiento del ciclotrón. Calcule la velocidad que alcanza un protón en un acelerador de \ec{18 \un{MeV}}. Despeje la expresión para el radio de giro de la partícula acelerada y calcule su valor para un campo magnético de \ec{1.9 \un{T}} (Ciclotrón Medicina UNAM).
+  
+
+Se tienen las ecuaciones para el ciclotrón \citep{cherry,cyclo}:
+\eq{c:1}{\tx{Energía de partículas aceleradas (aproximación):}\quad E(\un{MeV})\approx 4.8\times10^{-3}\cdot\dfrac{(H\times R\times Z)^2}{A}}
+donde \ec{H} es la magnitud del campo magnético en unidades Tesla, \ec{R} es el radio orbital de la partícula, \ec{Z} y \ec{A} es el número atómico (carga) y número de masa de la partícula acelerada.
+
+\eq{c:2}{\tx{Energía de partículas aceleradas:}\quad E(\un{MeV})= \dfrac{(q\times B\times R)^2}{2m}}
+La relación anterior es la energía con la que la partícula cargada es expulsada, entonces, en el último orbital esta energía es máxima, con \ec{m} la masa de la partícula y \ec{q} la carga de la misma. De lo anterior se obtiene la velocidad
+\eq{c:3}{\tx{Velocidad de la partícula:}\quad v=\dfrac{qBR}{m}}
+
+
+
+\pagebreak
+
+Para obtener la velocidad se considera la ecuación de energía cinética dada por
+\eq{c:4}{\tx{Energía cinética:}\quad E_k=\dfrac{1}{2}mv^2}
+despejando la velocidad tenemos que
+\eq{c:5}{v=\sqrt{\dfrac{2E_k}{m}}}
+donde \ec{E_k=18\un{MeV}} y \ec{m=1.67262192\times10^{-27}\un{kg}} la masa del protón. Recordando que \ec{1.602176634\times10^{-19}\un{J}}, tenemos que
+\al{v&=\sqrt{\dfrac{2E_k}{m}}\\
+&=\sqrt{\dfrac{2(18\un{MeV})}{1.67262192\times10^{-27}\un{kg}}}\\
+&=\sqrt{\dfrac{2(18\times10^{6}\un{eV})}{1.67262192\times10^{-27}\un{kg}}}\\
+&=\sqrt{\dfrac{2(18\times10^{6}\times1.602176634\times10^{-19}\un{J})}{1.67262192\times10^{-27}\un{kg}}}\\
+&=\sqrt{\dfrac{2(18\times10^{6}\times1.602176634\times10^{-19}\cor{\tx{kg}\cdot\tx{m}^2\cdot\tx{s}^{-2}})}{1.67262192\times10^{-27}\un{kg}}}\\
+&=\sqrt{\dfrac{36\times1.602176634\times10^{14}}{1.67262192}}\cor{\tx{m}\cdot\tx{s}^{-1}}\\
+&=5.87229082 \times 10^7\cor{\tx{m}\cdot\tx{s}^{-1}}
+}
+Para calcular el radio con la energía dada, tomamos la ecuación \ref{c:2} y despejamos \ec{R} 
+\ecc{E= \dfrac{(q\times B\times R)^2}{2m}\implies R=\dfrac{\sqrt{2mE}}{qB}}
+observemos que 
+\ecc{v=\sqrt{\dfrac{2E}{m}}\implies mv=m\sqrt{\dfrac{2E}{m}}=\sqrt{m^2\times\dfrac{2E}{m}}=\sqrt{2mE}}
+por lo que
+\ecc{R=\dfrac{mv}{qB}}
+para este caso, la carga del protón es \ec{q=1.60217663 \times 10^{-19}\un{C}} con la magnitud del campo magnético \ec{B=1.9\un{T}}. Por lo tanto, tenemos que el radio es 
+ \al{R&=\dfrac{mv}{qB}\\
+ &=\dfrac{(1.67262192\times10^{-27}\un{kg})(5.87229082 \times 10^7\cor{\tx{m}\cdot\tx{s}^{-1}})}{(1.60217663 \times 10^{-19}\un{C})(1.9\un{T})},\quad  1\un{T}=1\cor{\tx{kg}\cdot \tx{C}^{-1}\cdot \tx{s}^{-1}}\\
+ &=\dfrac{(1.67262192\un{kg})(5.87229082 \times 10^{-1}\cor{\tx{m}\cdot\tx{s}^{-1}})}{(1.60217663\un{C})(1.9\cor{\tx{kg}\cdot \tx{C}^{-1}\cdot \tx{s}^{-1}})}\\
+ &=\dfrac{(1.67262192)(5.87229082 \times 10^{-1})}{(1.60217663)(1.9)}\un{m}\\
+ &=0.322657189\cor{\tx{m}}\\
+ &=32.2657189\cor{\tx{cm}}\\
+ }
+
+ Por lo tanto, el protón alcanza una velocidad de \ec{5.87 \times 10^7\cor{\tx{m}\cdot\tx{s}^{-1}}}  con un radio de giro de \ec{32.27\cor{\tx{cm}}}.
+
+\pagebreak
+
+
+
+
+
+  \item  Ve el siguiente video \url{https://www.youtube.com/watch?v=GGR6NTAvPao}, o este: \url{https://www.youtube.com/watch?v=BmkdAqd5ReY} y con base en lo aprendido realiza la
+  reconstrucción de esta matriz, explica cada paso.
+
+  \eq{max}{A_{0000}=\begin{bmatrix} 9 & 3 \\ 2 & 5 \end{bmatrix} }
+
+
+
+
+    \ftikz{1}{./figuras/p10.tikz}{}{fig:x}
+
+De acuerdo a la figura \ref{fig:x}, tomamos la proyección 4 al sumar las filas
+\ecc{A_4=\begin{bmatrix} 12 & 12 \\ 7 & 7 \end{bmatrix} }
+donde se le suma la proyección 3 a la matriz \ec{A_4}
+
+\ecc{A_{43}=\begin{bmatrix} 12 & 12 \\ 7 & 7 \end{bmatrix}+\begin{bmatrix} 14 & 3 \\ 2 & 14 \end{bmatrix} =\begin{bmatrix} 26 & 15 \\ 9 & 21 \end{bmatrix} }
+
+después se realiza la suma de las proyecciones 2
+\ecc{A_{432}=\begin{bmatrix} 26 & 15 \\ 9 & 21 \end{bmatrix}+\begin{bmatrix} 11 & 8 \\ 11 & 8 \end{bmatrix} =\begin{bmatrix} 37 & 23 \\ 20 & 29 \end{bmatrix} }
+y se realiza la suma a la matriz \ec{A_{432}} de la proyección 1
+\ecc{A_{4321}=\begin{bmatrix} 37 & 23 \\ 20 & 29 \end{bmatrix}+\begin{bmatrix} 9 & 5 \\ 5 & 5 \end{bmatrix} =\begin{bmatrix} 46 & 28 \\ 25 & 24 \end{bmatrix} }
+luego realizamos la resta de la proyección 4 de la matriz \ec{A_{4321}}
+\ecc{A_{321}= A_{4321} - A_{4} =\begin{bmatrix} 46 & 28 \\ 25 & 24 \end{bmatrix}-\begin{bmatrix} 12 & 12 \\ 7 & 7 \end{bmatrix} =\begin{bmatrix} 27 & 9 \\ 6 & 15 \end{bmatrix} }
+finalmente se divide entre el número de proyecciones restantes, es decir 3, y se obtiene la reconstrucción de la matrix
+\ecc{A_{reb}=\dfrac{1}{3}\begin{bmatrix} 27 & 9 \\ 6 & 15 \end{bmatrix}=\begin{bmatrix} 9 & 3 \\ 2 & 5 \end{bmatrix} =A_{0000}}
+
+
 \end{enumerate}
 
 
 \pagebreak
-
-
-
-
-
-
-
-
-
-\begin{enumerate}[1.]
-\item ¿En qué consiste la CT cardíaca?
-
-
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.7\textwidth]{./figuras/40134_2012_5_Fig13_HTML.png}
-\caption{Esquema para de un CT de haz de electrones sin piezas móviles. La figura se recuperó de \citep{Flohr}.}
-\label{p1:ct}
-\end{figure}
-
-El estudio de la CT cardíaca introduce la quinta generación de CT \citep{IM}, la cual viene con mejoras en tiempo de adquisición ultrarápidas, ya que se toma en cuenta que se tiene alrededor de 60 latidos por minuto y 1 segundo de duración del ciclo cardíaco y para tener una imagen estática del corazón se requería una ventada de tiempo de adquisición de 100 milisegundos o incluso menos. Con ello se desarrolló en 1984 la CT de haz de electrones (EBCT)  \citep{jerro}.
-
-
-En la figura \ref{p1:ct} se observa el funcionamiento del sistema EBCT. Este sistema consta de un tubo de rayos X estacionario y un anillo de detectores de tungsteno también estacionario, el mecanismo es el siguiente: El cañón de electrones emite un haz de electrones acelerados con un potencial de aproximadamente \ec{120\;kV}  y son desviados magnéticamente por una bobina magnética, esta desviación barre el haz y lo dirige hacia el anillo, provocando la generación de rayos X en un arco de \ec{210^\circ}  \citep{Flohr,jerro}. 
-
-
-\item  ¿En qué consiste la CT helicoidal?
-
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.5\textwidth]{./figuras/p2_ct.png}
-  \caption{Se realiza un muestreo de los datos de manera continua y se realiza una interpolación (estimación de un valor dado dos datos conocidos) de estos para reconstruir la imagen en cualquier plano transversal. La figura se recuperó de \citep{stewart}.}
-  \label{p2:ct}
-  \end{figure}
-
-Se trata de una sexta generación de CT \citep{IM}, la cual puede verse como si el paciente se moviera a lo largo del eje horizontal a medida que el tubo de rayos X gira alrededor de éste, como se muestra en la figura \ref{p2:ct}, entonces el haz de rayos X sigue una trayectoria helicoidal \citep{stewart}. 
-
-Se toma en cuenta el concepto Pitch, el cual se define como se establece en la ec. \ref{ec:p2}, entonces, si tenemos que la cama del paciente se mueve \ec{8\;mm} y el ancho del haz es de \ec{5\;mm}, entonces el pitch es de \ec{8\;mm/5\;mm=1.6}, la importancia de este concepto en la imagenología es que al aumentar el pitch, tendremos una reducción del tiempo de exploración y dosis al paciente, además, se obtiene un aumento del perfil de sensibilidad de corte y el ancho de corte efectivo \citep{stewart,jerro}.
-
-
-
-\eq{ec:p2}{\tx{Pitch}=\dfrac{\tx{Movimiento de la cama cada }360^\circ}{\tx{Ancho del haz}}}
-
-Para reconstruir las imágenes empleando este CT, se usa la interpolación de datos de la proyección a lo largo del eje del paciente en una posición seleccionada de interés, ya que la fuente de rayos X se ha desplazado de forma helicoidal a lo largo del paciente  y los algoritmos de reconstrucción suponen que la fuente de rayos X realiza una trayectoria circular y no una helicoidal.
-
-
-
-
-
-
-
-
-
-\item ¿En qué consiste la CT multicorte?
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.6\textwidth]{./figuras/p3_ct.png}
-  \caption{Se cuenta con una matriz de detectores de 16 detectores con un ancho de \ec{0.5\;mm} y un ancho de colimado de \ec{8\;mm} dando un pitch de \ec{0.5\times16/8=1}. La figura se recuperó de \citep{stewart}.}
-  \label{p3:ct}
-  \end{figure}
-
-
-Es la séptima generación de CT \citep{IM}, la CT multicorte hace uso de múltiples conjuntos de detectores para emplear una porción más amplia del haz de rayos X durante la adquisición de datos, consisten de una forma de CT  helicoidal donde se hace uso de múltiples anillos de detectores para escanear múltiples cortes del cuerpo durante cada rotación. El grosor de la sección se determina por el ancho del detector y no por el sistema de colimación, es decir, se pueden combinar cuatro filas de detectores para registrar simultáneamente cuatro secciones adyacentes en una sola rotación y que el ancho sea la suma de los anchos de cada detector. La ventaja de esta tecnología es que hace un mejor uso de la salida del haz del tubo de rayos X lo cual disminuye la carga térmica, además, mejora el tiempo de escaneo y reduce los artefactos debido al movimiento \citep{jerro,russ}.
-
-
-\pagebreak
-
-\item ¿Qué es un sinograma? ¿Por qué nos interesa estudiar un sinograma en imagenología?
-
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.5\textwidth]{./figuras/p4_sino.png}
-  \caption{Sinograma de una imagen analógica. La figura se recuperó de \citep{andre}.}
-  \label{p4:sino}
-  \end{figure}
-
-Un sinograma son los datos resultantes a los cuales se les ha aplicado la transformada de Radón, de forma práctica un camino para llegar a un sinograma es tomar las proyecciones y colocándolas como columnas en otra matriz. De acuerdo a la figura \ref{p4:sino}, si tomamos la proyección para cada ángulo tendremos una una distribución, las cuales se pueden superponer en caso de tener más objetos, entonces se puede construir una gráfica del ángulo contra la distribución en esa proyección. 
-
-La importancia en la imagenología es que puede detectar el movimiento del paciente, estos movimientos resultan en grandes artefactos cuando se reconstruye la imagen \citep{smith}.
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.7\textwidth]{./figuras/p4_2.png}
-  \caption{El sinograma izquierdo de un objeto que permaneció estático durante el escaneo, el de la derecha realizó un movimiento a la mitad del procedimiento provando un desplazamiento del sinograma. La figura se recuperó de \citep{smith}.}
-  \label{p4:sino2}
-  \end{figure}
-
-\pagebreak
-
-\item Utiliza tu número de cuenta para construir una matriz de 3x3. Obtén las proyecciones y la matriz de retroproyección (mostrar cada paso realizado)
-
-Tenemos la matriz de proyección con mi número de cuenta: \ec{316005171}
-
-\ecc{
-X=  
-\begin{bmatrix}
-  3 & 1 & 6\\
-  0 & 0 & 5\\
-  1 & 7 & 1
-  \end{bmatrix}}
-
-  \subsection{Primer paso}
-
-  Tomamos las proyecciones de las columnas y formamos la matriz de proyección \ec{a}:
-  \ecc{
-a=  
-\begin{bmatrix}
-  \frac{4}{3} & \frac{8}{3} & \frac{12}{3}\\ \\ 
-  \frac{4}{3} & \frac{8}{3} & \frac{12}{3}\\ \\
-  \frac{4}{3} & \frac{4}{3} & \frac{12}{3}
-  \end{bmatrix}}
-
-\subsection{Segundo paso}
-Construimos una matriz \ec{b} sumando los valores de la filas de la matriz \ec{X}
-\ecc{
-b=  
-\begin{bmatrix}
-  \frac{10}{3} & \frac{10}{3} & \frac{10}{3}\\ \\ 
-  \frac{5}{3} & \frac{5}{3} & \frac{5}{3}\\ \\
-  \frac{9}{3} & \frac{9}{3} & \frac{9}{3}
-  \end{bmatrix}}
-
-  \subsection{Tercer paso}
-Consideramos la proyección angular, las diagonales, de izquierda a derecha
-\ecc{
-  c=
-\begin{bmatrix}
-  \frac{3}{1} & \frac{1}{2} & \frac{7}{3}\\ \\ 
-  \frac{1}{2} & \frac{7}{3} & \frac{12}{2}\\ \\
-  \frac{7}{3} & \frac{12}{2} & \frac{1}{1}
-  \end{bmatrix}}
-
-
-\subsection{Cuarto paso}
-Como el paso anterior, tomamos la suma de diagonales de derecha a izquierda
-\ecc{
-  d=
-\begin{bmatrix}
-  \frac{4}{3} & \frac{6}{2} & \frac{6}{1}\\ \\ 
-  \frac{7}{2} & \frac{4}{3} & \frac{6}{2}\\ \\
-  \frac{1}{1} & \frac{7}{2} & \frac{4}{3}
-  \end{bmatrix}}
-
-\pagebreak
-
-\subsection{Quinto paso}
-Obtenemos la matriz de retroproyección al sumar las matrices \ec{a}, \ec{b}, \ec{c} y \ec{d}.
-\al{M&=a+b+c+d\\
-&=\begin{bmatrix}
-  \frac{4}{3} & \frac{8}{3} & \frac{12}{3}\\ \\ 
-  \frac{4}{3} & \frac{8}{3} & \frac{12}{3}\\ \\
-  \frac{4}{3} & \frac{4}{3} & \frac{12}{3}
-  \end{bmatrix}+\begin{bmatrix}
-    \frac{10}{3} & \frac{10}{3} & \frac{10}{3}\\ \\ 
-    \frac{5}{3} & \frac{5}{3} & \frac{5}{3}\\ \\
-    \frac{9}{3} & \frac{9}{3} & \frac{9}{3}
-    \end{bmatrix}+\begin{bmatrix}
-      \frac{3}{1} & \frac{1}{2} & \frac{7}{3}\\ \\ 
-      \frac{1}{2} & \frac{7}{3} & \frac{12}{2}\\ \\
-      \frac{7}{3} & \frac{12}{2} & \frac{1}{1}
-      \end{bmatrix}+\begin{bmatrix}
-        \frac{4}{3} & \frac{6}{2} & \frac{6}{1}\\ \\ 
-        \frac{7}{2} & \frac{4}{3} & \frac{6}{2}\\ \\
-        \frac{1}{1} & \frac{7}{2} & \frac{4}{3}
-        \end{bmatrix}\\
-        &=\begin{bmatrix}
-          9 & 9.5 & 47/3\\ \\ 
-          7 & 8 & 44/3\\ \\
-          23/3 & 91/6 & 28/3
-          \end{bmatrix}}
-
-
-
-
-
-          
-
-
-
-
-
-
-
-\end{enumerate}
 
 
 \begin{multicols}{2}

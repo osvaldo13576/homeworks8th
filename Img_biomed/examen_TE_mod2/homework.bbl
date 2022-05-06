@@ -1,41 +1,104 @@
 \begin{thebibliography}{}
 
+\bibitem[Ahmadzadehfar et~al., 2022]{app34}
+Ahmadzadehfar, H., Biersack, H.-J., and Herrmann, K. (2022).
+\newblock {\em Clinical Applications of SPECT-CT}.
+\newblock Springer, 2nd ed. 2022 edition.
+
+\bibitem[Anand et~al., 2009]{app56}
+Anand, S., Singh, H., and Dash, A. (2009).
+\newblock Clinical applications of pet and pet-ct.
+\newblock {\em Medical Journal Armed Forces India}, 65(4):353--358.
+
+\bibitem[Ashraf and Goyal, 2021]{fdg_f18}
+Ashraf, M.~A. and Goyal, A. (2021).
+\newblock {{Fludeoxyglucose (18F)}}.
+\newblock {https://www.ncbi.nlm.nih.gov/books/NBK557653/}.
+
 \bibitem[Aurengo and Petitclerc, 2008]{andre}
 Aurengo, A. and Petitclerc, T. (2008).
 \newblock {\em Biofísica}.
 \newblock {McGRAW-HILL}, Madrid, España, 3 edition.
 
-\bibitem[Bushberg, 2012]{jerro}
-Bushberg, J.~T. (2012).
-\newblock {\em The essential physics of medical imaging}.
-\newblock Wolters Kluwer Health/Lippincott Williams \& Wilkins, 3 edition.
+\bibitem[Bennett et~al., 2018]{SUV1}
+Bennett, P., Mintz, A., Perry, B., Trout, A.~T., and Vergara-Wentland, P.
+  (2018).
+\newblock Approach to interpretation.
+\newblock In {\em Specialty Imaging: PET}, Specialty Imaging, pages 8--13.
+  Elsevier.
 
-\bibitem[Bushong, 2016]{stewart}
-Bushong, S.~C. (2016).
-\newblock {\em Radiologic Science for Technologists: Physics, Biology, and
-  Protection}.
-\newblock Mosby, 11 edition.
+\bibitem[Carter et~al., 2020]{range_posi}
+Carter, L.~M., Kesner, A.~L., Pratt, E.~C., Sanders, V.~A., Massicano, A.
+  V.~F., Cutler, C.~S., Lapi, S.~E., , and Lewis, J.~S. (2020).
+\newblock {{The Impact of Positron Range on PET Resolution, Evaluated with
+  Phantoms and PHITS Monte Carlo Simulations for Conventional and
+  Non-conventional Radionuclides}}.
+\newblock \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6805144/}.
 
-\bibitem[Flohr, 2013]{Flohr}
-Flohr, T.~G. (2013).
-\newblock Ct systems.
-\newblock {\em Current Radiology Reports}, 1:52--63.
+\bibitem[Cherry et~al., 2012]{cherry}
+Cherry, S.~R., Sorenson, J.~A., and Phelps, M.~E. (2012).
+\newblock {\em {Physics in Nuclear Medicine: Expert Consult - Online and
+  Print}}.
+\newblock Saunders, 4 edition.
 
-\bibitem[{Guadarrama-Huerta} and {Ciros-Ortíz}, 2021]{IM}
-{Guadarrama-Huerta}, P. and {Ciros-Ortíz}, J. (2021).
+\bibitem[Graham, 2021]{SUV3}
+Graham, M.~M. (2021).
+\newblock Chapter 80 - quantification of radiotracer uptake into tissue.
+\newblock In Ross, B.~D. and Gambhir, S.~S., editors, {\em Molecular Imaging
+  (Second Edition)}, pages 1613--1624. Academic Press, second edition edition.
+
+\bibitem[{Guadarrama-Huerta} and {Ciros-Ortíz}, 2022]{IM}
+{Guadarrama-Huerta}, P. and {Ciros-Ortíz}, J. (2022).
 \newblock {{Material de apoyo Imagenología Biomédica}}.
 \newblock \url{https://classroom.google.com/u/1/c/NDY4NzkwMjc4Nzk5}.
 
-\bibitem[Hendee and Ritenour, 2002]{russ}
-Hendee, W.~R. and Ritenour, E.~R. (2002).
-\newblock {\em MEDICAL IMAGING PHYSICS}.
-\newblock {Wiley-Liss, Inc}, New York, NY, 4 edition.
+\bibitem[Guy and Ffytche, 2005]{guy}
+Guy, C. and Ffytche, D. (2005).
+\newblock {\em An introduction to the principles of medical imaging}.
+\newblock Imperial College Press; Distributed by World Scientific Pub, rev. ed
+  edition.
 
-\bibitem[Nadine and G, 2012]{smith}
-Nadine, B.~S. and G, W.~A. (2012).
+\bibitem[{Hernández-Falcón} et~al., 2012]{app1}
+{Hernández-Falcón}, D., {Marrero Riverón}, L., and {Ledea Lozano}, O.
+  (2012).
+\newblock {{Empleo de la medicina nuclear y las técnicas de imágenes en las
+  afecciones del sistema óseo}}.
+\newblock \url{http://scielo.sld.cu/pdf/ort/v26n2/ort10212.pdf}.
+
+\bibitem[Kinahan and Fletcher, 2010]{SUV2}
+Kinahan, P.~E. and Fletcher, J.~W. (2010).
+\newblock Positron emission tomography-computed tomography standardized uptake
+  values in clinical practice and assessing response to therapy.
+\newblock {\em Seminars in Ultrasound, CT and MRI}, 31(6):496--505.
+\newblock PET-CT in RT Planning and Assessment.
+
+\bibitem[Ling et~al., 2016]{cyclo}
+Ling, S.~J., Moebs, W., and Sanny, J. (2016).
+\newblock {{University Physics}}.
+\newblock {https://openstax.org/details/books/university-physics-volume-2}.
+
+\bibitem[Nadine and Andrew, 2012]{smith}
+Nadine, B.~S. and Andrew, W. (2012).
 \newblock {\em Introduction to medical imaging: physics, engineering and
   clinical applications}.
 \newblock Cambridge texts in biomedical engineering. Cambridge University
   Press, repr edition.
+
+\bibitem[Pérez-Iruela et~al., 2009]{app2}
+Pérez-Iruela, J.~A., Pastor, P., Lumbreras, L., Ortega, Paloma nad~Astasio,
+  P., and Puentes, M.~C. (2009).
+\newblock {Exactitud diagnóstica de la gammagrafía de perfusión miocárdica
+  en una población femenina con sospecha de cardiopatía isquémica}.
+\newblock {\em {Revista Colombiana de Cardiología}}, 16:232 -- 238.
+
+\bibitem[Soret et~al., 2007]{PVE}
+Soret, M., Bacharach, S.~L., and Buvat, I. (2007).
+\newblock Partial-volume effect in pet tumor imaging.
+\newblock {\em Journal of Nuclear Medicine}, 48(6):932--945.
+
+\bibitem[W. and R., 2019]{huda}
+W., H. and R., S. (2019).
+\newblock {\em Review of radiologic physics}.
+\newblock Lippincott Williams \& Wilkins, 4 edition.
 
 \end{thebibliography}

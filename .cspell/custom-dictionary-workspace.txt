@@ -1,5 +1,19 @@
 # Custom Dictionary Words
 Ampère
 Biomédica
+ciclotrón
+colimación
+colocándolas
 cuantizado
+EBCT
+interpolación
+magnéticamente
 magnetón
+milisegundos
+multicorte
+positrón
+provando
+sinograma
+Sinograma
+SPECT
+ultrarápidas
