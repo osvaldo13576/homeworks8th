@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.30)  9 MAY 2022 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.30)  5 JUN 2022 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/osvaldo13576/Documentos/Github/homeworks8th/Img_biomed/examen_TE_mod2/homework.tex
-(/home/osvaldo13576/Documentos/Github/homeworks8th/Img_biomed/examen_TE_mod2/homework.tex
+**"/home/osvaldo13576/Documentos/Github/homeworks8th/Seguridad Radiológica/pract_03/homework.tex"
+(/home/osvaldo13576/Documentos/Github/homeworks8th/Seguridad Radiológica/pract_03/homework.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (./style/settings (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -981,10 +981,10 @@ File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 20.
  (./homework.aux
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
 )
 \openout1 = `homework.aux'.
 
@@ -1098,7 +1098,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<style/logo.pdf, id=7, 449.68pt x 513.92pt>
+<style/logo.pdf, id=31, 449.68pt x 513.92pt>
 File: style/logo.pdf Graphic file (type pdf)
 <use style/logo.pdf>
 Package pdftex.def Info: style/logo.pdf  used on input line 29.
@@ -1112,24 +1112,38 @@ LaTeX Font Info:    Trying to load font information for T1+custom on input line 
 File: t1custom.fd 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
 \strutheight=\skip93
-
-
-pdfTeX warning: pdflatex (file ./figuras/tc_gen.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figuras/tc_gen.pdf, id=8, 210.7875pt x 210.7875pt>
-File: ./figuras/tc_gen.pdf Graphic file (type pdf)
-<use ./figuras/tc_gen.pdf>
-Package pdftex.def Info: ./figuras/tc_gen.pdf  used on input line 53.
-(pdftex.def)             Requested size: 241.84843pt x 241.85374pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 59.
+(Font)              scaled to size 14.4pt on input line 46.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 46.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 59.
+(Font)              scaled to size 12.0pt on input line 47.
+<./figuras/pract_03_con.pdf, id=34, 397.485pt x 289.08pt>
+File: ./figuras/pract_03_con.pdf Graphic file (type pdf)
+<use ./figuras/pract_03_con.pdf>
+Package pdftex.def Info: ./figuras/pract_03_con.pdf  used on input line 60.
+(pdftex.def)             Requested size: 217.66211pt x 158.30196pt.
+<./figuras/pract_03_sin.pdf, id=35, 397.485pt x 289.08pt>
+File: ./figuras/pract_03_sin.pdf Graphic file (type pdf)
+<use ./figuras/pract_03_sin.pdf>
+Package pdftex.def Info: ./figuras/pract_03_sin.pdf  used on input line 67.
+(pdftex.def)             Requested size: 217.66211pt x 158.30196pt.
+<./figuras/pract_03_code0_rep_r2.pdf, id=36, 397.485pt x 289.08pt>
+File: ./figuras/pract_03_code0_rep_r2.pdf Graphic file (type pdf)
+<use ./figuras/pract_03_code0_rep_r2.pdf>
+Package pdftex.def Info: ./figuras/pract_03_code0_rep_r2.pdf  used on input line 75.
+(pdftex.def)             Requested size: 217.66211pt x 158.30196pt.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 84.
+ (./homework.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 59.
-<style/Sheikah.pdf, id=25, 70.76437pt x 86.50592pt>
+(Font)              scaled to size 9.0pt on input line 5.
+) 
+AED: lastpage setting LastPage
+<style/Sheikah.pdf, id=38, 70.76437pt x 86.50592pt>
 File: style/Sheikah.pdf Graphic file (type pdf)
 <use style/Sheikah.pdf>
-Package pdftex.def Info: style/Sheikah.pdf  used on input line 75.
+Package pdftex.def Info: style/Sheikah.pdf  used on input line 92.
 (pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
 [1
 Non-PDF special ignored!
@@ -1159,83 +1173,31 @@ Non-PDF special ignored!
 <special> ps:0.8 setlinewidth 0 setgray
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
- <./style/logo.pdf> <./figuras/tc_gen.pdf> <./style/Sheikah.pdf
+ <./style/logo.pdf> <./figuras/pract_03_con.pdf> <./figuras/pract_03_sin.pdf> <./figuras/pract_03_code0_rep_r2.pdf> <./style/Sheikah.pdf
 
 pdfTeX warning: pdflatex (file ./style/Sheikah.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-File: style/Sheikah.pdf Graphic file (type pdf)
-<use style/Sheikah.pdf>
-Package pdftex.def Info: style/Sheikah.pdf  used on input line 121.
-(pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
- [2]
-File: style/Sheikah.pdf Graphic file (type pdf)
-<use style/Sheikah.pdf>
-Package pdftex.def Info: style/Sheikah.pdf  used on input line 192.
-(pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
- [3]
-File: style/Sheikah.pdf Graphic file (type pdf)
-<use style/Sheikah.pdf>
-Package pdftex.def Info: style/Sheikah.pdf  used on input line 224.
-(pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
- [4]
-LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-TLF on input line 229.
- (/usr/share/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
-File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10> not available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried instead on input line 229.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 229.
- (./figuras/p10.tikz
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 50.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 58.
-)
-File: style/Sheikah.pdf Graphic file (type pdf)
-<use style/Sheikah.pdf>
-Package pdftex.def Info: style/Sheikah.pdf  used on input line 259.
-(pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
- [5]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 262.
- (./homework.bbl
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 1.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 5.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <9> not available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried instead on input line 36.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 36.
-) 
-AED: lastpage setting LastPage
-File: style/Sheikah.pdf Graphic file (type pdf)
-<use style/Sheikah.pdf>
-Package pdftex.def Info: style/Sheikah.pdf  used on input line 270.
-(pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
-[6] (./homework.aux
+>] (./homework.aux
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
 )
 Package rerunfilecheck Info: File `homework.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: A9034485A2202BFA33DB91E5FABC8714;804.
  ) 
 Here is how much of TeX's memory you used:
- 34911 strings out of 478238
- 626438 string characters out of 5850456
- 1195549 words of memory out of 5000000
- 52423 multiletter control sequences out of 15000+600000
- 539458 words of font info for 97 fonts, out of 8000000 for 9000
+ 34694 strings out of 478238
+ 622215 string characters out of 5850456
+ 1180904 words of memory out of 5000000
+ 52253 multiletter control sequences out of 15000+600000
+ 519450 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,136p,974b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texmf-dist/fonts/enc/ttf2pk/base/T1-WGL4.enc}<custom.ttf>{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on homework.pdf (6 pages, 478088 bytes).
+ 99i,15n,136p,776b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texmf-dist/fonts/enc/ttf2pk/base/T1-WGL4.enc}<custom.ttf>{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+Output written on homework.pdf (1 page, 325230 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

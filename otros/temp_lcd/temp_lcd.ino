@@ -16,16 +16,15 @@ void setup()
 
 void loop()
 {
-  delay(2000); // wait a few seconds between measurements
+  delay(1500); // wait a few seconds between measurements
 
   float humi  = dht.readHumidity();    // read humidity
   float tempC = dht.readTemperature(); // read temperature
-
   lcd.clear();
   // check if any reads failed
   if (isnan(humi) || isnan(tempC)) {
     lcd.setCursor(0, 0);
-    lcd.print("Failed");
+    lcd.print("Error No Sensor");
   } else {
     lcd.setCursor(0, 0);  // start to print at the first row
     lcd.print("Temp: ");
@@ -34,8 +33,9 @@ void loop()
     lcd.print("C");
 
     lcd.setCursor(0, 1);  // start to print at the second row
-    lcd.print("Humi: ");
-    lcd.print(humi);      // print the humidity
-    lcd.print("%");
+    lcd.print("AbsT: ");
+    lcd.print(tempC + 273.15);      // print the humidity
+    lcd.print((char)223); // print ° character
+    lcd.print("K");
   }
 }
