@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.30)  5 JUN 2022 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.30)  7 JUN 2022 21:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -960,7 +960,7 @@ Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footer
 \f@nch@O@erf=\skip83
 \f@nch@O@olf=\skip84
 \f@nch@O@orf=\skip85
-)) (/usr/share/texmf-dist/tex/latex/scalerel/scalerel.sty
+) (/usr/share/texmf-dist/tex/latex/scalerel/scalerel.sty
 Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretching of objects, relative to a reference object or in absolute terms
  (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -973,6 +973,35 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \mnxsrwidth=\skip90
 \LMex=\skip91
 \LMpt=\skip92
+) (/usr/share/texmf-dist/tex/latex/qrcode/qrcode.sty
+Package: qrcode 2015/01/08 v1.51 QR code generation
+\c@qr@i=\count406
+\c@qr@j=\count407
+\qr@a=\count408
+\qr@b=\count409
+\qr@c=\count410
+\qr@for@depth=\count411
+\qr@for@maxdepth=\count412
+\qr@for@start=\count413
+\qr@for@end=\count414
+\qr@for@step=\count415
+\qr@newforcount=\count416
+\qr@newforcount=\count417
+\qr@desiredheight=\skip93
+\qr@modulesize=\skip94
+\qr@minipagewidth=\skip95
+\c@maski=\count418
+\c@maskj=\count419
+\c@totalones=\count420
+\c@penaltyi=\count421
+\c@penaltyii=\count422
+\c@penaltyiii=\count423
+\c@penaltyiv=\count424
+\c@qr@hexchars=\count425
+\qr@newforcount=\count426
+\c@qr@divisionsremaining=\count427
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 102.
 ) (./style/short_commands)
 LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineT-TLF on input line 20.
  (/usr/share/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.fd
@@ -981,10 +1010,11 @@ File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 20.
  (./homework.aux
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ <Reading QR code for "https://drive.google.com/drive/folders/13PmgP-4thSk1ruKukwwLjd-M1DLD013e?usp=sharing" at level 5-M from aux file.>
 )
 \openout1 = `homework.aux'.
 
@@ -1008,16 +1038,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count406
+\scratchcounter=\count428
 \scratchdimen=\dimen386
 \scratchbox=\box129
-\nofMPsegments=\count407
-\nofMParguments=\count408
+\nofMPsegments=\count429
+\nofMParguments=\count430
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count409
+\MPscratchCnt=\count431
 \MPscratchDim=\dimen387
-\MPnumerator=\count410
-\makeMPintoPDFobject=\count411
+\MPnumerator=\count432
+\makeMPintoPDFobject=\count433
 \everyMPtoPDFconversion=\toks59
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1025,8 +1055,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@mv@tabular=\count412
-\c@mv@boldtabular=\count413
+\c@mv@tabular=\count434
+\c@mv@boldtabular=\count435
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1062,7 +1092,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count414
+\c@lstlisting=\count436
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1081,7 +1111,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count415
+\c@section@level=\count437
 )
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
@@ -1098,52 +1128,60 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<style/logo.pdf, id=31, 449.68pt x 513.92pt>
+
+pdfTeX warning: pdflatex (file ./style/logo.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<style/logo.pdf, id=19, 899.36pt x 513.92pt>
 File: style/logo.pdf Graphic file (type pdf)
 <use style/logo.pdf>
 Package pdftex.def Info: style/logo.pdf  used on input line 29.
-(pdftex.def)             Requested size: 37.34058pt x 42.67912pt.
+(pdftex.def)             Requested size: 74.68117pt x 42.67912pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 34.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 34.
 LaTeX Font Info:    Trying to load font information for T1+custom on input line 34.
- (./t1custom.fd
+(./t1custom.fd
 File: t1custom.fd 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map})
-\strutheight=\skip93
+\strutheight=\skip96
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
+(Font)              scaled to size 9.0pt on input line 46.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
+(Font)              scaled to size 9.0pt on input line 46.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 47.
-<./figuras/pract_03_con.pdf, id=34, 397.485pt x 289.08pt>
-File: ./figuras/pract_03_con.pdf Graphic file (type pdf)
-<use ./figuras/pract_03_con.pdf>
-Package pdftex.def Info: ./figuras/pract_03_con.pdf  used on input line 60.
-(pdftex.def)             Requested size: 217.66211pt x 158.30196pt.
-<./figuras/pract_03_sin.pdf, id=35, 397.485pt x 289.08pt>
-File: ./figuras/pract_03_sin.pdf Graphic file (type pdf)
-<use ./figuras/pract_03_sin.pdf>
-Package pdftex.def Info: ./figuras/pract_03_sin.pdf  used on input line 67.
-(pdftex.def)             Requested size: 217.66211pt x 158.30196pt.
-<./figuras/pract_03_code0_rep_r2.pdf, id=36, 397.485pt x 289.08pt>
-File: ./figuras/pract_03_code0_rep_r2.pdf Graphic file (type pdf)
-<use ./figuras/pract_03_code0_rep_r2.pdf>
-Package pdftex.def Info: ./figuras/pract_03_code0_rep_r2.pdf  used on input line 75.
-(pdftex.def)             Requested size: 217.66211pt x 158.30196pt.
+(Font)              scaled to size 14.4pt on input line 53.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 53.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 84.
- (./homework.bbl
+(Font)              scaled to size 12.0pt on input line 54.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 58.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 58.
+<./figuras/fig4.png, id=31, 1606.0pt x 1093.08376pt>
+File: ./figuras/fig4.png Graphic file (type png)
+<use ./figuras/fig4.png>
+Package pdftex.def Info: ./figuras/fig4.png  used on input line 76.
+(pdftex.def)             Requested size: 217.66211pt x 148.1437pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 5.
-) 
-AED: lastpage setting LastPage
-<style/Sheikah.pdf, id=38, 70.76437pt x 86.50592pt>
+(Font)              scaled to size 10.0pt on input line 90.
+<./figuras/fig_meto.pdf, id=42, 498.73828pt x 218.81749pt>
+File: ./figuras/fig_meto.pdf Graphic file (type pdf)
+<use ./figuras/fig_meto.pdf>
+Package pdftex.def Info: ./figuras/fig_meto.pdf  used on input line 100.
+(pdftex.def)             Requested size: 459.51054pt x 201.61168pt.
+
+
+pdfTeX warning: pdflatex (file ./figuras/fig_sin_con.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<./figuras/fig_sin_con.pdf, id=43, 702.625pt x 281.05pt>
+File: ./figuras/fig_sin_con.pdf Graphic file (type pdf)
+<use ./figuras/fig_sin_con.pdf>
+Package pdftex.def Info: ./figuras/fig_sin_con.pdf  used on input line 107.
+(pdftex.def)             Requested size: 459.51054pt x 183.8082pt.
+<style/Sheikah.pdf, id=45, 70.76437pt x 86.50592pt>
 File: style/Sheikah.pdf Graphic file (type pdf)
 <use style/Sheikah.pdf>
-Package pdftex.def Info: style/Sheikah.pdf  used on input line 92.
+Package pdftex.def Info: style/Sheikah.pdf  used on input line 115.
 (pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
 [1
 Non-PDF special ignored!
@@ -1173,31 +1211,60 @@ Non-PDF special ignored!
 <special> ps:0.8 setlinewidth 0 setgray
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
- <./style/logo.pdf> <./figuras/pract_03_con.pdf> <./figuras/pract_03_sin.pdf> <./figuras/pract_03_code0_rep_r2.pdf> <./style/Sheikah.pdf
+ <./style/logo.pdf> <./figuras/fig4.png> <./style/Sheikah.pdf>]
+<./figuras/pract_03_code0_rep_r2.pdf, id=104, 686.565pt x 289.08pt>
+File: ./figuras/pract_03_code0_rep_r2.pdf Graphic file (type pdf)
+<use ./figuras/pract_03_code0_rep_r2.pdf>
+Package pdftex.def Info: ./figuras/pract_03_code0_rep_r2.pdf  used on input line 139.
+(pdftex.def)             Requested size: 478.86255pt x 201.62239pt.
+File: style/Sheikah.pdf Graphic file (type pdf)
+<use style/Sheikah.pdf>
+Package pdftex.def Info: style/Sheikah.pdf  used on input line 171.
+(pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
+ [2 <./figuras/fig_meto.pdf> <./figuras/fig_sin_con.pdf>] (./homework.bbl
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 5.
+LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-TLF on input line 11.
+ (/usr/share/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
+File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <9> not available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 11.
+) 
 
-pdfTeX warning: pdflatex (file ./style/Sheikah.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./homework.aux
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
+<QR code requested for "https://drive.google.com/drive/folders/13PmgP-4thSk1ruKukwwLjd-M1DLD013e?usp=sharing" in version 0-M.>
+<Copying the QR code for "https://drive.google.com/drive/folders/13PmgP-4thSk1ruKukwwLjd-M1DLD013e?usp=sharing" in version 5-M as previously calculated.>
+File: style/Sheikah.pdf Graphic file (type pdf)
+<use style/Sheikah.pdf>
+Package pdftex.def Info: style/Sheikah.pdf  used on input line 198.
+(pdftex.def)             Requested size: 9.19968pt x 11.24615pt.
+[3 <./figuras/pract_03_code0_rep_r2.pdf>] 
+AED: lastpage setting LastPage
+(./homework.aux
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ <Reading QR code for "https://drive.google.com/drive/folders/13PmgP-4thSk1ruKukwwLjd-M1DLD013e?usp=sharing" at level 5-M from aux file.>
 )
 Package rerunfilecheck Info: File `homework.out' has not changed.
-(rerunfilecheck)             Checksum: A9034485A2202BFA33DB91E5FABC8714;804.
+(rerunfilecheck)             Checksum: 87667146193FF58CC3834D82C2CDE1EA;378.
  ) 
 Here is how much of TeX's memory you used:
- 34694 strings out of 478238
- 622215 string characters out of 5850456
- 1180904 words of memory out of 5000000
- 52253 multiletter control sequences out of 15000+600000
- 519450 words of font info for 75 fonts, out of 8000000 for 9000
+ 36279 strings out of 478238
+ 645268 string characters out of 5850456
+ 1284332 words of memory out of 5000000
+ 53800 multiletter control sequences out of 15000+600000
+ 542674 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,136p,776b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texmf-dist/fonts/enc/ttf2pk/base/T1-WGL4.enc}<custom.ttf>{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-Output written on homework.pdf (1 page, 325230 bytes).
+ 99i,20n,136p,1703b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texmf-dist/fonts/enc/ttf2pk/base/T1-WGL4.enc}<custom.ttf>{/usr/share/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on homework.pdf (3 pages, 3494395 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2378 PDF objects out of 2487 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

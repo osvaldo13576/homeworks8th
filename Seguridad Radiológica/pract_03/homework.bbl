@@ -1,8 +1,28 @@
 \begin{thebibliography}{}
 
+\bibitem[Attix, 1986]{attix}
+Attix, F.~H. (1986).
+\newblock {\em Introduction to Radiological Physics Radiation Dosimetry}.
+\newblock Wiley-VCH, 1 edition.
+
+\bibitem[Kane and Davis, 2021]{tc99m}
+Kane, S.~M. and Davis, D.~D. (2021).
+\newblock {{Technetium-99m StatPearls Publishing}}.
+\newblock \url{https://www.ncbi.nlm.nih.gov/books/NBK559013/}.
+
+\bibitem[Knoll, 2010]{detec2}
+Knoll, G.~F. (2010).
+\newblock {\em Radiation Detection and Measurement}.
+\newblock Wiley, 4th edition.
+
 \bibitem[Landsberger and Tsoulfanidis, 2015]{detec1}
 Landsberger, S. and Tsoulfanidis, N. (2015).
 \newblock {\em Measurement and Detection of Radiation, Fourth Edition}.
 \newblock CRC Press, 4th ed edition.
+
+\bibitem[Stabin, 2007]{conceptos1}
+Stabin, M.~G. (2007).
+\newblock {\em Radiation Protection and Dosimetry}.
+\newblock Springer, 1 edition.
 
 \end{thebibliography}

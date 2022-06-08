@@ -93,3 +93,10 @@
 \usepackage{tikz}
 \usepackage{scalerel}
 %\usepackage{linalgjh}
+\usepackage{qrcode}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={black},
+    urlcolor={black}
+}

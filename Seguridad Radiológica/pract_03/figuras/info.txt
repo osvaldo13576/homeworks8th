@@ -1,0 +1,24 @@
+vector de distancia =  [ 20  40  60  80 100 120 140 160 180 200 220 250]
+vector de 1/distancia^2 =  [2.50000000e-03 6.25000000e-04 2.77777778e-04 1.56250000e-04
+ 1.00000000e-04 6.94444444e-05 5.10204082e-05 3.90625000e-05
+ 3.08641975e-05 2.50000000e-05 2.06611570e-05 1.60000000e-05]
+vector de media con capuchón =  [4.71 1.19 0.62 0.41 0.28 0.2  0.16 0.12 0.11 0.1  0.08 0.07]
+vector de media sin capuchón =  [4.66 1.33 0.65 0.41 0.33 0.23 0.17 0.14 0.11 0.1  0.09 0.07]
+vector de desv_con =  [0.24513035 0.00942809 0.0697615  0.04443222 0.0094163  0.01496663
+ 0.00939267 0.01181336 0.02997777 0.02735365 0.01358921 0.01759419]
+vector de desv_sin =  [0.31633316 0.06683313 0.04496913 0.03645088 0.03847943 0.01065624
+ 0.01236482 0.02131249 0.00648074 0.00478423 0.00509902 0.00418994]
+vector de sqrt_X2_X1_con =  [0.503 0.721 0.817 0.829 0.829 0.903 0.866 0.963 0.96  0.895 0.948]
+vector de sqrt_X2_X1_sin =  [0.534 0.697 0.792 0.904 0.831 0.863 0.898 0.906 0.92  0.954 0.867]
+vector de d1_d2 (con las medidas del vector de distancia)=  [0.5   0.667 0.75  0.8   0.833 0.857 0.875 0.889 0.9   0.909 0.88 ]
+R cuadrado con capuchón =  0.9732
+R cuadrado sin capuchón =  0.9557
+m_con (pendiente)=  1858.2923248341067
+b_con (ordenada al origen)=  0.06686687386322854
+m_sin (pendiente)=  1840.1041186168877
+b_sin (ordenada al origen)=  0.08971150206258284
+error de las medidas promedio_sin con respecto a mediadas_con =  [ 1.14 10.28  4.12  2.05 14.16 14.53  6.45 13.08  1.77  6.97  5.75 12.76]
+error del cociente de las distancias d1/d2 con respecto a sqrt(X_2/X_1)_con =  [0.63 8.12 9.   3.67 0.49 5.3  1.06 8.35 6.69 1.53 7.71]
+error del cociente de las distancias d1/d2 con respecto a sqrt(X_2/X_1)_sin =  [ 6.85  4.59  5.65 13.04  0.27  0.64  2.64  1.92  2.23  4.9   1.53]
+número de datos =  12
+número de errores error_d1_d2_con =  11
