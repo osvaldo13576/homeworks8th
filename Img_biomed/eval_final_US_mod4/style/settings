@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article} 
+\usepackage{natbib}
+%\usepackage{chapterbib}
+\topmargin -.45in
+\textwidth 6.5in
+\textheight 9.in
+\oddsidemargin 0in
+\headheight 1in
+\usepackage{physics}
+\usepackage{calc}
+\usepackage{adjustbox}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{fancybox}
+%\usepackage{tgschola} %fuente
+%%%
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{longtable}
+%%%
+\usepackage{xurl}
+%\usepackage[hyphens]{url}
+\usepackage[utf8]{inputenc}
+\usepackage{epsfig,graphicx}
+\usepackage{multicol,pst-plot}
+\usepackage{pstricks}
+\usepackage{amsmath,mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{eucal}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\pagestyle{empty}
+
+
+\usepackage{lipsum}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+
+\usepackage{listings, style/lstlisting}
+
+\usepackage{lastpage}
+\usepackage{upgreek}
+\usepackage{subfig}
+\usepackage{karnaugh-map}
+\usepackage{cancel} 
+\usepackage{braket}
+\selectlanguage{spanish}
+\usepackage{enumerate}
+
+
+\usepackage[final, colorlinks = true, 
+            linkcolor = black, 
+            citecolor = black]{hyperref}
+
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{array,multirow,graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+%\usepackage{pgfplots}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{scalerel}
+%\usepackage{linalgjh}

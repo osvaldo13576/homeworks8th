@@ -1,11 +1,11 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2022/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: homework.aux
 The style file: apalike.bst
 Database file #1: bib.bib
 You've used 17 entries,
             1935 wiz_defined-function locations,
-            580 strings with 6766 characters,
+            580 strings with 6755 characters,
 and the built_in function-call counts, 6592 in all, are:
 = -- 641
 > -- 318
