@@ -60,7 +60,8 @@ void loop()
  lcd.print(myRTC.minutes);
  lcd.print(":");
  lcd.print(myRTC.seconds);
- lcd.print("      IDLE");
+ lcd.setCursor(12, 1);
+ lcd.print("IDLE");
   if (isnan(tempC)) {
     lcd.setCursor(0, 0);
     lcd.print("Temp: ");
